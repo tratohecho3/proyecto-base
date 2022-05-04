@@ -1,2 +1,3 @@
-# proyecto-base
-Repositorio para que mis estudiantes del Bootcamp hagan fork y luego creen un pull request
+Jose alexander alfonzo leal
+Cohorte #1
+Mi proyecto base.
