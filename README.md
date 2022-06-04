@@ -1,2 +1,3 @@
-# proyecto-base
-Repositorio para que mis estudiantes del Bootcamp hagan fork y luego creen un pull request
+Jose Tayupo Cohorte 1
+https://jtayupo.github.io/Proyecto-personal-II.io/Proyecto%20personal%20II/index.html
+
