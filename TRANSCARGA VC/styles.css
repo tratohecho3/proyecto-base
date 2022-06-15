@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box; 
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+}
+button{
+    font-weight: 600;
+    color: #fff;
+    background-color: #FF5552;
+    border: 1px solid #FF5552;
+    border-radius: 43px 43px 43px 43px;
+    padding: 13px 40px;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 40%)
+}
+button:hover{
+    background-color: #ca3e3b;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: white;
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #011640;
+}
+header a:hover{
+    color: #a1a1a1;
+}
+#consulta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url("assets/mudanzas.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+#somos-tvc .container{
+    text-align: center;
+}
+#nuestros-servicios .container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.carta:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url("assets/Basica.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgb(0,0,0);
+    margin: 10px;
+    border-radius: 25px;
+}
+.carta:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url("assets/Estandar.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgb(0,0,0);
+    margin: 10px;
+    border-radius: 25px;
+}
+@media (min-width: 720px) {
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 90px;
+        margin-top: 10px;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    header .logo img{
+        height: 90px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+}
