@@ -24,13 +24,23 @@
             <h1>Inicio de sesión</h1>
             <p>
               <span>¿Nuevo por aquí?</span>
-              <a href="Sign-up.html">Crear nueva cuenta</a>
+              <a href="sign-up.html">Crear nueva cuenta</a>
             </p>
-            <form action="home.html">
+            <form action="home.html" method="post">
               <label for="login-email">
                 <small>Dirección de correo electónico</small>
               </label>
-              <input id="login-email" type="email" autofocus />
+              <input
+                id="login-email"
+                type="email"
+                autofocus
+                name="emailLogin"
+              />
+              <label for="login-password">
+                <small>Contraseña</small>
+              </label>
+              <input id="login-password" type="password" name="passwordLogin" />
+
               <button class="login-email_button" type="submit">
                 Continuar
               </button>
@@ -64,11 +74,12 @@
       </article>
       <section class="login-video">
         <div class="backgroud--degraded"></div>
-        <img src="assets/media/video/ezgif.com-gif-maker.gif" alt="" />
+        <img src="assets/media/video/login.gif" alt="video-mute" preload />
         <!-- <video autoplay loop muted>
           <source
             src="assets/media/video/pexels-tima-miroshnichenko-6389831.mp4"
             type="video/mp4"
+            preload
           />
         </video> -->
       </section>

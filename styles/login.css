@@ -9,6 +9,9 @@ h1 {
 h2 {
   color: var(--title-color);
 }
+h3 {
+  color: var(--text-color);
+}
 a {
   color: var(--link-color);
 }
@@ -39,7 +42,7 @@ small {
 }
 .login-container_center {
   position: relative;
-  top: 16%;
+  top: 10%;
   width: 75%;
   margin: auto;
 }
@@ -49,8 +52,10 @@ h1 {
 }
 
 small {
-  margin-top: 10%;
   display: block;
+}
+form {
+  margin-top: 10%;
 }
 hr {
   margin-top: 10%;
@@ -188,4 +193,59 @@ li > a {
     rgba(0, 0, 0, 0) 60%,
     rgba(0, 0, 0, 0.5) 100%
   );
+}
+
+/* ---------------------SIGN-UP---------------------------- */
+.sign-container_center {
+  position: relative;
+  top: 5%;
+  width: 75%;
+  margin: auto;
+}
+.sign-container_center :nth-child(1) * {
+  margin-top: 5px;
+  margin-bottom: 0x;
+}
+.sign-container_center h3 {
+  padding-top: 3%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.sign-social_button {
+  margin-left: 8%;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-color);
+}
+.sign-social_button > span {
+  font-size: 2.3125rem;
+}
+.sign_icon > img {
+  max-width: 37px;
+}
+
+.form--sign-up :nth-child(3),
+.form--sign-up :nth-child(4) {
+  display: inline-block;
+  width: 45%;
+}
+.check {
+  display: block;
+  padding-top: 4%;
+}
+.check * {
+  display: inline;
+  width: initial;
+  margin: 0;
+}
+.sign-up_video {
+  position: fixed;
+  max-width: 80%;
+  width: 100%;
+  height: 100%;
+  left: 20%;
+  right: 0;
 }
