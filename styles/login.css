@@ -1,3 +1,27 @@
+/* 
+Esto es temporal
+se pasará a global.css cuando se establesca los parametros nesesarios
+para interactuar entre modo CLARO y mode OSCURO 
+*/
+h1 {
+  color: var(--title-color);
+}
+h2 {
+  color: var(--title-color);
+}
+a {
+  color: var(--link-color);
+}
+
+p {
+  color: var(--text-color);
+}
+small {
+  color: var(--text-color);
+}
+
+/* ----------------------------------------- */
+
 .login-article {
   position: fixed;
   max-width: 30%;
@@ -31,7 +55,7 @@ small {
 hr {
   margin-top: 10%;
   margin-bottom: 11%;
-  border-color: var(--white-color);
+  border-color: var(--border-color_hover);
   opacity: 50%;
 }
 a:hover {

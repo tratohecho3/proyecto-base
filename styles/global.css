@@ -20,30 +20,31 @@ html {
 *::before {
   box-sizing: inherit;
 }
+body {
+  width: 100%;
+}
 h1 {
-  color: var(--title-color);
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
 }
 h2 {
-  color: var(--title-color);
   font-weight: 500;
 }
 a {
   text-decoration: none;
-  color: var(--link-color);
 }
-
-p {
-  color: var(--text-color);
+hr {
+  border-style: solid;
 }
 small {
-  color: var(--text-color);
   font-size: 0.67rem;
 }
 button {
   font-weight: 600;
 }
 video {
+  width: 100%;
+}
+img {
   width: 100%;
 }
