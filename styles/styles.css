@@ -120,7 +120,7 @@ li > a:hover {
   font-size: 1.3rem;
   letter-spacing: 0.08rem;
 }
-.cantainer--image {
+.container--image {
   display: inline-block;
   position: relative;
   width: 25%;
