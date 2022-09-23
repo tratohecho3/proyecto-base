@@ -1,236 +1,302 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Looking for University</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/styles/general.css" />
-  <link rel="stylesheet" href="/styles/university.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/150ca43927.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Números de Emergenci de Perú</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-  <!-- START HEADER-->
-  <header>
-    <a href="/index.html"><img src="assets/images/page-background.svg" class="header__logo" alt="Logo" /></a>
-    <nav>
-      <ul class="menu">
-        <li><a href="https://rosmelortizpimentel.github.io/pages/profile-card.html">About</a></li>
-        <li><a href="/university.html">Contact</a></li>
-        <li><a href="/university.html">Services</a></li>
-        <li class="active"><a href="index.html">Home</a></li>
-      </ul>
-    </nav>
-    <section class="section__search">
-      <form>
-        <input list="countries" class="form form__country" placeholder="Country" name="country" />
-        <datalist id="countries">
-          <select>
-            <option value="United States">United States</option>
-            <option value="United Kingdom">United Kingdom</option>
-            <option value="Canada">Canada</option>
-            <option value="Perú">Perú</option>
-          </select>
-        </datalist>
-        <input type="text" name="search" class="form form__search" style="font-size: 20px;"
-          placeholder="What would you like to study?" />
-        <button type="submit" class="button">Search</button>
-      </form>
-    </section>
-  </header>
-  <!-- END HEADER-->
+    <div class="main__container">
 
-  <!-- START BACKGROUND-->
-  <!-- 
-  <div class="background">
-    <img src="/assets/images/page-background.svg" alt="" srcset="" class="background__image" />
-  </div>
-  -->
-  <!-- END BACKGROUND-->
-
-  <!--START SERVICES INFO-->
-  <article>
-    <section class="content content--padding">
-      <h1 class="title">Looking for where to study?</h1>
-      <h1 class="subtitle">Find here all the information of the best universities in the world.</h1>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rerum voluptas odit itaque dolor vel repellat
-        quidem id. Id obcaecati iure delectus ea soluta praesentium sunt sed tempore eligendi consequatur?</span>
-      <section class="content">
-        <div class="column column__services">
-          <img class="services__images" src="/assets/images/services-search.svg" alt="" srcset=""
-            class="background__image" />
-          <span class="services__text">1. Search</span>
+        <header>
+            <div class="navbar__section">
+                <div class="navbar__container">
+                    <div class="logo__container">
+                        <a href="/">
+                            <img src="assets/images/logo.png" width="158" alt="">
+                        </a>
+                    </div>
+                    <nav class="navbar__menu">
+                        <a href="/" onclick="goMenu()" class="navbar__link inline__block">
+                            <div class="navbar__link__text">INICIO</div>
+                            <div class="navbar__menu__underline selected"></div>
+                        </a>
+                        <a href="#favoritos" onclick="goMenu()" class="navbar__link inline__block">
+                            <div class="navbar__link__text">MIS FAVORITOS</div>
+                            <div class="navbar__menu__underline"></div>
+                        </a>
+                        <a href="#top_numeros" onclick="goMenu()" class="navbar__link inline__block">
+                            <div class="navbar__link__text">TOP NÚMEROS</div>
+                            <div class="navbar__menu__underline"></div>
+                        </a>
+                    </nav>
+                    <div class="nav-button-animated w-nav-button w--open" aria-label="menu" role="button" tabindex="0"
+                        aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="true">
+                        <span id="mobile_menu" class="fa fa-bars color-primary" onclick="validateMenu(this)"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main__section">
+            <div class="body__section">
+                <h2>Números de Emergencia en Perú</h2>
+                <div class="categories">
+                </div>
+                <div class="all__numbers">
+                </div>
+            </div>
+            <span id="top_numeros"></span>
+            <h2>Top Numeros</h2>
+            <div class="top__numbers">
+            </div>
+            <span id="favoritos"></span>
+            <h2>Mis Favoritos</h2>
+            <div class="my__favourites">
+            </div>
         </div>
-        <div class="column column__services">
-          <img class="services__images" src="/assets/images/services-contact.svg" alt="" srcset=""
-            class="background__image" />
-          <span class="services__text">2. Contact</span>
-        </div>
-        <div class="column column__services">
-          <img class="services__images" src="/assets/images/services-analyze.svg" alt="" srcset=""
-            class="background__image" />
-          <span class="services__text">3. Analyze</span>
-        </div>
-        <div class="column column__services">
-          <img class="services__images" src="/assets/images/services-decide.svg" alt="" srcset=""
-            class="background__image" />
-          <span class="services__text">4. Decide</span>
-        </div>
-
-      </section>
-    </section>
-  </article>
-  <!--END SERVICES INFO-->
-
-
-  <!--START CONTENT-->
-  <article>
-
-    <section class="content">
-
-      <!--STAR BEST UNIVERSITIES-->
-      <article class="column column__article">
-        <h1 class="title__secondary">Best Universities</h1>
-        <hr>
-        <span>These are some of the top universities in the world.<br> Be part of one!</span>
-        <section class="content">
-          <div class="column column__university">
-            <img class="university_photo" src="/assets/images/University_MIT.jpg"
-              alt="Massachusetts Institute of Technology (MIT)" srcset="" class="background__image" />
-            <a href="/university.html">
-              <h3 class="university__name">Massachusetts Institute of Technology (MIT)</h3>
-            </a>
-            <a class="university__country" href="/index.html?country=United_States"><img
-                src="/assets/images/map.png">United States</a>
-          </div>
-          <div class="column column__university">
-            <img class="university_photo" src="/assets/images/University_of_Cambridge.jpg" alt="University of Cambridge"
-              srcset="" class="background__image" />
-            <a href="/university.html">
-              <h3 class="university__name">University of Cambridge</h3><br>
-            </a>
-            <a class="university__country" href="/index.html?country=United_Kingdom"><img
-                src="/assets/images/map.png">United Kingdom</a>
-          </div>
-          <div class="column column__university">
-            <img class="university_photo" src="/assets/images/Stanford_University .jpg" alt="Stanford University"
-              srcset="" class="background__image" />
-            <a href="/university.html">
-              <h3 class="university__name">Stanford University</h3>
-            </a>
-            <a class="university__country" href="/index.html?country=United_States"><img
-                src="/assets/images/map.png">United States</a>
-          </div>
-          <div class="column column__university">
-            <img class="university_photo" src="/assets/images/University-of-Oxford.jpg" alt="University of Oxford"
-              srcset="" class="background__image" />
-            <a href="/university.html">
-              <h3 class="university__name">University of Oxford</h3>
-            </a>
-            <a class="university__country" href="/index.html?country=United_Kingdom"><img
-                src="/assets/images/map.png">United Kingdom</a>
-          </div>
-          <div class="column column__university">
-            <img class="university_photo" src="/assets/images/Harvard-University.jpg" alt="Harvard University" srcset=""
-              class="background__image" />
-            <a href="/university.html">
-              <h3 class="university__name">Harvard University</h3>
-            </a>
-            <a class="university__country" href="/index.html?country=United_Kingdom"><img src="/assets/images/map.png">
-              </im>United States</a>
-          </div>
-          <div class="column column__university">
-            <img class="university_photo" src="/assets/images/Stanford_University .jpg" alt="Stanford University<"
-              srcset="" class="background__image" />
-            <a href="/university.html">
-              <h3 class="university__name">Stanford University</h3>
-            </a>
-            <a class="university__country" href="/index.html?country=United_States"><img
-                src="/assets/images/map.png">United States</a>
-          </div>
-        </section>
-      </article>
-      <!--END  BEST UNIVERSITIES-->
-
-      <!-- START NEWS -->
-      <aside class="column column__aside" style="margin-top:-100px;">
-        <h1 class="title__secondary title__secondary--center" style="position: top;">Events</h1>
-        <hr>
-        <span>Find out about upcoming events and the latest news</span><br><br>
-        <div class="news">
-          <div class="news__body">
-            <img src="/assets/images/news-la-salle.jpg" alt="Design Festival 2022" srcset="" class="news__logo" />
-          </div>
-          <div class="news__footer">
-            <h5 class="news__info"><a href="https://www.lasallecollege.com/events/fmd-2022" target="_blank">College x
-                Mode + Design Festival 2022</a></h5><br>
-            <i class="fa-solid fa-calendar fa-1x color__icon--primary"></i> <span class="news__info">August 22,
-              2022</span>
-          </div>
-        </div><br><br>
-        <div class="news">
-          <div class="news__body">
-            <img src="/assets/images/news-la-salle-02.jpg" alt="A festive back-to-school event" srcset=""
-              class="news__logo" />
-          </div>
-          <div class="news__footer">
-            <h5 class="news__info"><a href="https://www.lasallecollege.com/events/fmd-2022" target="_blank">A festive
-                back-to-school event</a></h5><br>
-            <i class="fa-solid fa-calendar fa-1x color__icon--primary"></i> <span class="news__info">August 25,
-              2022</span>
-          </div>
-        </div><br><br>
-        <div class="news">
-          <div class="news__body--video">
-            <video src="/assets/video/video-devices.m4v" controls autoplay alt="Film Festival 2022" srcset=""
-              class="news__logo" />
-          </div>
-          <div class="news__footer">
-            <h5 class="news__info"><a href="" target="_blank">Film Festival 20222</a></h5><br>
-            <i class="fa-solid fa-calendar fa-1x color__icon--primary"></i> <span class="news__info">Coming soon</span>
-          </div>
-        </div>
-      </aside>
-      <!-- END NEWS -->
-    </section>
-  </article>
-  <!--END CONTENT-->
-
-  <!--START ADVERTISING-->
-  <article>
-    <section class="advertising">
-      <a href="https://www.up.edu.pe/en/" target="_blank">
-        <img src="/assets/images/banner_publicidad.png" alt="Universiad Pacífico" srcset="" />
-      </a>
-    </section>
-  </article>
-  <!--END ADVERTISING-->
-
-  <!--START FOOTER-->
-  <footer>
-    <div class="socialnetworks">
-      <a href="https://github.com/rosmelortizpimentel/The-Front-End-Bootcamp"><img
-          src="/assets/images/logotipo-de-github.png" alt="Github" /></a>
-      <a href="https://www.linkedin.com/in/rosmelortizpimentel"><img src="/assets/images/logotipo-de-linkedin.png"
-          alt="LinkedIn" /></a>
     </div>
-    <div class="copyright">
-      <span>Rosmel Ortiz Pimentel</span><br />
-      <span>© 2022</span>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>To Do</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur aperiam enim quia saepe atque
+                vero, accusamus similique unde amet earum ex eum ducimus dolore iusto doloremque obcaecati
+                doloribus? Doloremque, soluta?
+
+            </div>
+        </div>
     </div>
-  </footer>
-  <!--END FOOTER-->
 
-  <!--START RETURN-->
-  <a href="../index.html" class="btn-flotante">BOOTCAMP</a>
-  <!--END RETURN-->
+    <footer>
+        <div class="socialnetworks">
+            <a href="https://github.com/rosmelortizpimentel/The-Front-End-Bootcamp"><img
+                    src="assets/images/logotipo-de-github.png" alt="Github" /></a>
+            <a href="https://www.linkedin.com/in/rosmelortizpimentel"><img src="assets/images/logotipo-de-linkedin.png"
+                    alt="LinkedIn" /></a>
+        </div>
+        <div class="copyright">
+            <span>Rosmel Ortiz Pimentel</span><br />
+            <span>© 2022</span>
+        </div>
+    </footer>
+
+    <a class="btn-flotante btn-flotante--right">
+        <span class="fa fa-star"></span><br>
+        <span class="num_favourites"></span>
+    </a>
+    <a onclick="clearLocalStorage()" class="btn-flotante btn-flotante--left">
+        <span class="fa fa-trash"></span><br>
+        <span class="num_favourites">Limpiar Favoritos</span>
+    </a>
 
 
+    <script>
+
+        function generateItems(node, numbersToShow) {
+            favourites = JSON.parse(localStorage.getItem('favouritesNumbers'));
+            let item = '';
+            numbersToShow.forEach(number => {
+
+                item += `
+                <div class="number__card">
+                    <div class="number__card__image"><img src="assets/images/${number.picture}" alt="">
+                        </div>
+                        <div class="number__card__info">
+                            <div class="number__card__category">${number.category}</div>
+                            <h2 class="number__card__place">
+                                <span class="thumbs fa fa-thumbs-up" onclick="like(this)" style="display:none;"></span>
+                                <span class="star ${(favourites !== null && favourites.filter(item => item.id === number.id).length > 0) ? 'fa fa-star favourite' : 'fa fa-star-o'}" onclick="favourite(this)" data-id="${number.id}"></span> ${number.name}
+                            </h2>
+                            <div class="btn__call">
+                                <a href="#popup1"">
+                                    <div class="number__card__call">${number.number} </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            });
+            node.innerHTML = item;
+        }
+        function generateCategories(node, categories) {
+            numbers = JSON.parse(localStorage.getItem('allNumbers'));
+            let item = '';
+            categories.forEach(category => {
+                item += `
+                    <a data-category="${category}" class="category__filter" onclick="filterCategory(this)">
+                        <div>${category} (${category === 'Todos' ? numbers.length : numbers.filter(item => item.category === category).length}) </div>
+                    </a>`;
+            });
+            node.innerHTML = item;
+        }
+
+        function showAllNumbers() {
+            numbers = JSON.parse(localStorage.getItem('allNumbers'));
+            let node = document.querySelector('.all__numbers');
+            generateItems(node, numbers)
+            // generateItems(node, numbers.filter(item => !item.top))
+
+        }
+
+        function showTopNumbers() {
+            numbers = JSON.parse(localStorage.getItem('allNumbers'));
+            let node = document.querySelector('.top__numbers');
+            generateItems(node, numbers.filter(item => item.top))
+
+        }
+
+        function showCatgories() {
+            numbers = JSON.parse(localStorage.getItem('allNumbers'));
+            let node = document.querySelector('.categories');
+            let categories = [`Todos`];
+            numbers.forEach(element => {
+                categories.indexOf(element.category) < 0 ? categories.push(element.category) : '';
+            });
+            console.log("cate", categories);
+            generateCategories(node, categories);
+        }
+
+        function showFavouritesNumbers() {
+            numbers = JSON.parse(localStorage.getItem('favouritesNumbers'));
+            numbers = numbers === null ? [] : numbers;
+            let node = document.querySelector('.my__favourites');
+            let nodeCountFavourites = document.querySelector('.num_favourites');
+            nodeCountFavourites.innerHTML = numbers.length + ' Favoritos';
+            generateItems(node, numbers);
+            let trash = document.querySelector('.btn-flotante--left');
+            if (numbers.length > 0) {
+                trash.style.visibility = 'visible';
+            } else {
+                trash.style.visibility = 'hidden';
+
+            }
+        }
+
+        function filterCategory(item) {
+            const category = item.getAttribute('data-category');
+            console.log(category);
+            if (category === 'Todos') {
+                showAllNumbers();
+            } else {
+                numbers = JSON.parse(localStorage.getItem('allNumbers'));
+                let node = document.querySelector('.all__numbers');
+                generateItems(node, numbers.filter(item => /*!item.top && */item.category === category));
+            }
+        }
+
+        function loadData() {
+            let allNumbers = localStorage.getItem('allNumbers');
+            // if (allNumbers === null) {
+            if (true) {
+                fetch("./assets/data/numbers.json")
+                    .then(response => {
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log("Cargando data inicial");
+                        localStorage.setItem('allNumbers', JSON.stringify(data));
+                        showAllNumbers();
+                        showTopNumbers();
+                        showCatgories();
+                    });
+            } else {
+                showAllNumbers();
+                showTopNumbers();
+                showCatgories();
+            }
+        }
+
+        function favourite(icon) {
+            let idNumber = parseInt(icon.getAttribute('data-id'));
+            console.log(icon);
+            if (icon.classList.contains("favourite")) {
+                icon.classList.remove("favourite");
+                icon.classList.remove("fa-star");
+                icon.classList.add("fa-star-o");
+                manageFavourite('remove', idNumber);
+            } else {
+                icon.classList.add("favourite");
+                icon.classList.remove("fa-star-o");
+                icon.classList.add("fa-star");
+                manageFavourite('add', idNumber);
+            }
+        }
+
+        function manageFavourite(action, idNumber) {
+            let favourites = JSON.parse(localStorage.getItem('favouritesNumbers'));
+            let numbers = JSON.parse(localStorage.getItem('allNumbers'));
+            let newfavourites = null;
+            if (favourites === null) {
+                favourites = [];
+            }
+            if (action === 'add') {
+                newfavourites = numbers.filter(item => item.id === idNumber);
+                favourites.push(newfavourites[0])
+            } else if (action === 'remove') {
+                newfavourites = favourites.filter(item => item.id !== idNumber);
+                favourites = newfavourites;
+            }
+            localStorage.setItem('favouritesNumbers', JSON.stringify(favourites));
+            showFavouritesNumbers();
+            showAllNumbers();
+            showTopNumbers();
+        }
+
+        function clearLocalStorage() {
+            localStorage.clear();
+            showFavouritesNumbers();
+            loadData();
+        }
+
+        showFavouritesNumbers();
+        loadData();
+
+        function validateMenu(_this) {
+            let mobile_menu = document.getElementById('mobile_menu');
+            if (mobile_menu.classList.contains("fa-bars")) {
+                showMobileMenu(mobile_menu);
+            } else {
+                hiddenMobileMenu(mobile_menu);
+            }
+        }
+
+        function showMobileMenu(mobile_menu) {
+            let menu = document.querySelector('.navbar__menu');
+            mobile_menu.classList.remove("fa-bars");
+            mobile_menu.classList.add("fa-close");
+            menu.classList.remove("display--none");
+            menu.classList.add("display--block");
+            console.log("Mostrar menu");
+        }
+
+        function hiddenMobileMenu(mobile_menu) {
+            let menu = document.querySelector('.navbar__menu');
+            mobile_menu.classList.remove("fa-close");
+            mobile_menu.classList.add("fa-bars");
+            menu.classList.remove("display--block");
+            menu.classList.add("display--none");
+            console.log("ocultar menu");
+        }
+
+        function goMenu() {
+            let menu = document.querySelector('.navbar__menu');
+            hiddenMobileMenu(mobile_menu);
+
+        }
+
+
+    </script>
 </body>
 
 </html>
