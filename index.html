@@ -4,136 +4,232 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TypicalFood</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/tf-favicon.png">
+    <title>PASTELES ARTESANALES</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
-        <header class="header">
-            <div class="header__nav">
-                <a href="index.html" title="Index">
-                    <img src="images/logo_cuy.jpg" alt="logo" class="header__logo">
+    <header class="container--center">
+        <nav>
+            <div class="box box--navbar">
+                <a href="index.html">
+                    <img src="assets/lorena-pasteleria-logo.png" alt="lorena-pasteleria-logos" class="navbar__column__logo">
                 </a>
-                  <nav>
-                        <ul>
-                            <li>
-                                <a href="ordenar.html" class="button button__menu">Ordenar</a>
-                            </li>
-                            <li>
-                                <a href="menu.html" class="button button__menu">Menu</a>
-                            </li>
-                            <li>
-                                <a href="crianza.html" class="button button__menu">Crianza</a>
-                            </li>
-                        </ul>
-                    </nav>
+                
+                <div class="menu">
+                    <div class="text--center">
+                        <a href="" class="navbar__link">Home</a></br>
+                    </div>
+                    <div class="text--center">
+                        <a href="" class="navbar__link">Sobre mi</a>  
+                    </div>
+                    <div class="text--center">
+                        <a href="" class="navbar__link">Contacto</a>    
+                    </div>
+               </div>
+               <div class="icon-wrapper">
+                <img src="./assets/close.svg" alt="Close logo" 
+                class="hidden navbar__icon--close"
+                onclick="closeModal()" />
+                <img src="./assets/menu.svg" alt="Menu logo"
+                class="navbar__icon--open"
+                onclick="openModal()">
+                </div>
             </div>
             
-            <section class="header__background">
-                <div class="header__contents">
-                    <h1 class="title">EL SABOR TRADICIONAL DE LA SIERRA ECUATORIANA</h1>
-                    <h2 class="subtitle">Disfruta con tus seres queridos un sabor exquisito</h2>
-                </div>
-                <a href="menu.html" class="button big--button">VER MENU</a>
-            </section>
-            
-        </header>  
-        <div class="background">
-            <img src="images/fondo_cuy.jpg" alt="fondo_cuy" class="background__image">
-            <div class="background gradient--background"></div>
-        </div>  
+           
+        </nav>
+        <div class="container--center">
+            <div class="box"> 
+                <img src="assets/lorena-pasteleria-logo-whit.svg" alt="lorena-pasteleria-logo" class="navbar__row__logo">
+            </div>
+        </div>
+        <div class="separator">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
         
-       
-        <article>
-            <div class="section__contents">
-                <div class="column column__content">
-                    <h1 class="title">Nuestros platos tipicos</h1>
-                    <h2 class="subtitle">Prueba de uno de nuestros platos clásicos para saborear un cuy como nunca.</h2>
-                </div>
-                <div class="column__items">
-                   <div class="column__item">
-                        <h3 class="item__title">Papas con cuy</h3>
-                        <img src="images/cuy_tipico.jpg" alt="cuy tipico" class="column__image">
-                        <div class="column__button--border"></div>
-                        <a href="detalle.html" class="column__button"> VER DETALLES</a>
-                   </div>
-                   <div class="column__item">
-                        <h3 class="item__title">Sabor tradicional</h3>
-                        <img src="images/cuy_manjares.webp" alt="cuy con manjares" class="column__image">
-                        <div class="column__button--border"></div>
-                        <a href="detalle.html" class="column__button"> VER DETALLES</a>
-                   </div>
-                </div>
-            </div>
-        </article>
+    </header>
+    
+    <section class="who-we-are-section container--center">
+        <div class="box text--center">
+          <p class="text--m text--green-secondary text--600">
+            Lorena Pastelería Artesanal
+          </p>
+          <p class="text--l text--green-primary text--300">
+            Queremos compartir con ustedes
+          </p>
+          <p class="text--xl text--green-primary text--600">
+            Momentos de Felicidad
+          </p>
+          <p class="text--linear">
+            ____________________________
+          </p>
+          <p class="text--m text--green-secondary text--300">
+            Disfruta de nuestros deliciosos dulces y salados.
+          </p>
+          <img src="assets/barra-flores-1536x33.webp" alt="barra-flores">
+        </div>
+      </section>
 
-        <div  class="orders" >
-        <article>
-           <div class="section__contents">
-                <div class="column">
-                    <div class="section__telephone">
-                        <img src="images/pedidos2.jpg" alt="pedidos de cuy" class="section__image">
+
+      <section class="services-section container--center">
+        <div class="box--l container-services" >
+            <div class="service-description">
+                <div class="container--photo__image">
+                    <img class="item" src="assets/card-cheesecake-lorena-pasteleria.webp" alt="" >
+                    <div class="subitem">
+                        <a href="" class="service-detail--link">
+                            Chessecakes
+                        </a>
                     </div>
                 </div>
-                <div class="columna column content">
-                    <h1 class="title">AHORA ACEPTAMOS ORDENES VIA WHATSAPP</h1>
-                    <h2 class="subtitle">Ordenar sus platos favoritos es más fácil con los pedidos en línea. 
-                        Elige la ubicación que más te convenga y tendremos tu pedido listo para recoger.</h2>
+                    
+            </div>
+            <div class="service-description">
+                <div class="container--photo__image">
+                    <img class="item" src="assets/card-tortas-lorena-pasteleria.webp" alt="">
+                    <div class="subitem">
+                        <a href="" class=" service-detail--link">
+                            Tortas
+                        </a>
+                    </div>
                 </div>
-           </div>
-        </article>
-        <div class="section__background section__background--mask">
-            <img src="images/fondo_cuy.jpg" alt="fondo_pedidos" class="background__image">
-            <div class="section__background section__background--gradient"></div>
+            </div>
+            <div class="service-description">
+                <div class="container--photo__image">
+                    <img class="item" src="assets/card-queques-lorena-pasteleria.webp" alt="">
+                    <div class="subitem">
+                        <a href="" class=" service-detail--link">
+                            Queques
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="service-description">
+                <div class="container--photo__image">
+                    <img class="item" src="assets/card-quiches-lorena-pasteleria.webp" alt="">
+                    <div class="subitem">
+                        <a href="" class=" service-detail--link">
+                            Quiches
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="service-description">
+                <div class="container--photo__image">
+                    <img class="item" src="assets/card-postres-lorena-pasteleria.webp" alt="">
+                    <div class="subitem">
+                        <a href="" class=" service-detail--link">
+                            Postres tradicionales
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-description">
+                <div class="container--photo__image">
+                    <img class="item" src="assets/card-antojitos-lorena-pasteleria.webp" alt="">
+                    <div class="subitem">
+                        <a href="" class=" service-detail--link">
+                            Antojitos
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </section>
+
+      <section>
+        <div class="container--center">
+                
+            
+            <div class="box banner--box"> 
+                <div class="banner--notice banner-display-top">
+                    <p>PREMIUM</p>
+                </div>
+                   
+                    <img src="assets/banner-premium.webp" alt="banner-premium" class="banner--premium">
+                    <p class="banner-item1 text--green-primary text--xl text--600">Productos PREMIUM</p>
+                     <p class="banner-item2 text--green-secondary text--ls text--600">Ya los probaste?</p>
+                    <button onclick="document.getElementById('id01').style.display='block'" class="banner-item3 banner-buton">Elige el tuyo</button>
+            </div>
+            <div class="container--center">
+                <p class="text--green-secondary text--m banner--message">Haz tus pedidos en Lorena Pastelería Artesanal. Escoge el tuyo</p>
+            </div>
+            
         </div>
-    </div>
+      </section>
+
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content">
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <img class="modal--popup" src="assets/popup-10-off.webp" alt="popup-10-off">
+          </div>
+        </div>
+      
+
+      <footer class="container--center">
+        <div class="box container--footer">
+            <div class="footer--description  ">
+                <img src="assets/lorena-pasteleria-logo.png" alt="lorena-pasteleria-logos" class="footer--logo">
+            </div>
+            <div class="footer--description">
+                <h3 class="text--green-primary text--ls">Páginas</h3> 
+                    <a class="footer--link" href="#">Nosotros</a>
+                    <a class="footer--link" href="#">Carta</a>
+                    <a class="footer--link" href="#">Contacto</a>
+               
+            </div>
+            <div class="footer--description">
+                <h3 class="text--green-primary text--ls">Información</h3> 
+                    <a class="footer--link" href="#">Términos y Condiciones</a>
+                    <a class="footer--link" href="#">Política de Privacidad</a>
+                    <a class="footer--link" href="#">Libro de Reclamaciones</a>
+                
+            </div>
+            <div class="text--center">
+                <h3 class="text--green-primary text--ls">Síguenos</h3>
+                <a class="footer--link" href="">
+                    <img class="footer--icon" src="assets/instagram.svg" alt="">
+                </a>
+                <a class="footer--link" href="">
+                    <img class="footer--icon" src="assets/facefook.svg" alt="">    
+                </a>
+                <a class="footer--link" href="">
+                    <img class="footer--icon" src="assets/tiktok.svg" alt="">    
+                </a>
+            </div>
+        </div>
+        <div class="container--center">
+            <p class="text--autor">LORENA PASTELERÍA ARTESANAL © 2022 DERECHOS RESERVADOS - CREADO POR TEAM • STUDIO</p>
+        </div>
+      </footer>
+
+      
+
+      <script>
+        function closeModal(){
+            let menu = document.querySelector('.menu');
+            let closeIcon = document.querySelector('.navbar__icon--close');
+            let openIcon = document.querySelector('.navbar__icon--open');
+            menu.classList.remove('visible');
+            closeIcon.classList.add("hidden");
+            openIcon.classList.remove('hidden')
+        }
+        function openModal(){
+            let menu = document.querySelector('.menu');
+            let closeIcon = document.querySelector(".navbar__icon--close");
+            let openIcon = document.querySelector('.navbar__icon--open');
+            menu.classList.add('visible');
+            closeIcon.classList.remove("hidden");
+            openIcon.classList.add('hidden')
+        }
+      </script>
    
-    <div class="social__media">
-        <h3 class="social__media--text">siguenos en nuestras redes sociales</h3>
-        <div class="social__media--icon-container">
-            <a href="#" target="_blank" class="social__media--icon-wrap social--inlineblock">
-                <img src="images/instagram_icon.png" alt="instagram" class="social__media--icon">
-            </a>
-
-            <a href="#" target="_blank" class="social__media--icon-wrap social--inlineblock">
-                <img src="images/facebook_icon.png" alt="instagram" class="social__media--icon">
-            </a>
-        </div>
-    </div>
-    
-    <footer>
-        <div class="footer__contact--wrap">
-            <div class="footer__column">
-                <h5 class="footer__header">Azogues</h5>
-                <div class="footer__address--text">
-                    Victor Manuel Crespo
-                </div>
-                <a href="tel:(07)2631357" class="footer__phone--number">(07)2631357</a>
-            </div>
-            <div class="footer__column">
-                <h5 class="footer__header">Cuenca</h5>
-                <div class="footer__address--text">
-                    Victor Manuel Crespo
-                </div>
-                <a href="tel:(07)2631357" class="footer__phone--number">(07)2631357</a>
-            </div>
-
-            <div class="footer__column">
-                <h5 class="footer__header">HORAS</h5>
-                <div class="footer__address--text">
-                    "Azogues"
-                    <br>
-                    "Sabado - Domingo 11am - 8pm"
-                    <br>
-                    <br>
-                    "Cuenca"
-                    <br>
-                    "Viernes - Domingo 11am - 11pm"
-                </div>
-            </div>
-        </div>
-    </footer>
-    
 </body>
 </html>
