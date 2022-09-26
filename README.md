@@ -1,5 +1,5 @@
-# Jhans de la Cruz
+# N° Cohorte 02
 
-## Cohorte II
+[Link a la pagina en Github Pages](https://JhansdelaCruz.github.io/BookmarksApp)
 
-[Pages](https://jhansdelacruz.github.io/Web-App-project/)
+[Link al codigo fuente](https://github.com/JhansdelaCruz/BookmarksApp)

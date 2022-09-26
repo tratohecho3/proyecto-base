@@ -4,172 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App Web | GYM line</title>
+    <title>BookmarksApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="body-container">
-        <ol class="menu">
-          <li><a href="#">GYM-line</a></li>
-          <li><a href="public.html">Inicio</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ol>
-      </nav>
+    <header class="container__centerX">
+      <div class="box container__centerX">
+        <a href="#">. <span id="headerLogo">Bookmark</span></a>
+      </div>
     </header>
-    <section class="body-banner">
-      <div class="banner--degraded">
-        <div class="banner--title">
-          <h1>GYM-line</h1>
-          <h2>¡MUCHO MÁS QUE UN GIMNASIO ONLINE!</h2>
+    <div class="container__centerX head">
+      <div class="box">
+        <section class="container--head">
+          <div class="container__center">
+            <div>
+              <h1>¿Buscas herramientas para tu proyecto Web?</h1>
+              <p>
+                Aquí encontrarás algunos recursos que podrían ser de utilidad.
+              </p>
+            </div>
+          </div>
+          <img
+            src="acsses/img/programming.svg"
+            alt="Imagen de personas programando"
+          />
+        </section>
+      </div>
+    </div>
+    <section class="learn">
+      <div class="container__centerX">
+        <div class="box container--learn">
+          <div class="learn--subtitle">
+            <h2>Para empezar</h2>
+            <p>que mejor que algunas fuentes de informacion</p>
+          </div>
+          <div class="capa__top"></div>
+          <div id="learn" class="learn--content"></div>
+          <div class="capa__botton"></div>
         </div>
       </div>
-      <img
-        src="assets/images/home/banner/ezgif.com-gif-maker.gif"
-        alt="image-banner"
-      />
     </section>
-    <main class="body-container">
-      <section class="container_center">
-        <h2>El You-tube del deporte</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quas,
-          voluptatum blanditiis voluptatem corporis maxime mollitia omnis itaque
-          dicta adipisci quisquam sequi doloremque quod rerum accusamus,
-          voluptates assumenda esse eius.
-        </p>
-      </section>
-      <section class="container_center">
-        <div class="container--image">
-          <div class="play_center">
-            <a href="public.html"
-              ><img src="assets/icons/play.svg" alt="play"
-            /></a>
+
+    <main class="container__centerX">
+      <div class="box">
+        <article id="stockImages" class="stock">
+          <h2>Stock Images</h2>
+          <div class="stock--card"></div>
+        </article>
+        <article id="iconsPacks" class="stock">
+          <h2>Icon Packs</h2>
+          <div class="stock--card"></div>
+        </article>
+        <article id="stockFont" class="stock">
+          <h2>Font</h2>
+          <div class="stock--card"></div>
+        </article>
+
+        <article id="illustrations" class="stock">
+          <h2>Illustrations</h2>
+          <div class="stock--card"></div>
+        </article>
+        <article id="threeDPacks" class="stock">
+          <h2>3D Packs</h2>
+          <div class="stock--card"></div>
+        </article>
+        <article class="stock">
+          <h2>+ Tools</h2>
+          <div class="stock--card">
+            <div class="stockMore--card__item">
+              <span class="material-symbols-outlined">image</span>
+              <h3>Image</h3>
+            </div>
+            <div class="stockMore--card__item">
+              <span class="material-symbols-outlined">palette</span>
+              <h3>Color</h3>
+            </div>
+            <div class="stockMore--card__item">
+              <span class="material-symbols-outlined">terminal</span>
+              <h3>Online editors</h3>
+            </div>
+            <div class="stockMore--card__item">
+              <span class="material-symbols-outlined">construction</span>
+              <h3>Many tools</h3>
+            </div>
           </div>
-          <img
-            src="assets/images/home/play-video/01-img.jpg"
-            alt="play-video"
-          />
-        </div>
-        <div class="container--image">
-          <div class="play_center">
-            <a href="public.html"
-              ><img src="assets/icons/play.svg" alt="play"
-            /></a>
-          </div>
-          <img
-            src="assets/images/home/play-video/02-img.jpg"
-            alt="play-video"
-          />
-        </div>
-        <div class="container--image">
-          <div class="play_center">
-            <a href="public.html"
-              ><img src="assets/icons/play.svg" alt="play"
-            /></a>
-          </div>
-          <img
-            src="assets/images/home/play-video/03-img.jpg"
-            alt="play-video"
-          />
-        </div>
-      </section>
-      <section class="container_center">
-        <h2>Comparte</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugiat
-          perspiciatis neque.
-        </p>
-      </section>
-      <section class="container_center">
-        <div class="container--image">
-          <img
-            src="assets/images/home/section-comparte/01-img_Comp.jpg"
-            alt="seccion-comparte"
-          />
-        </div>
-        <div class="container--image">
-          <img
-            src="assets/images/home/section-comparte/02-img_Comp.jpg"
-            alt="seccion-comparte"
-          />
-        </div>
-        <div class="container--image">
-          <img
-            src="assets/images/home/section-comparte/03-img_Comp.jpg"
-            alt="seccion-comparte"
-          />
-        </div>
-        <div class="container--image">
-          <img
-            src="assets/images/home/section-comparte/04-img_Comp.jpg"
-            alt="seccion-comparte"
-          />
-        </div>
-        <div class="container--image">
-          <img
-            src="assets/images/home/section-comparte/05-img_Comp.jpg"
-            alt="seccion-comparte"
-          />
-        </div>
-        <div class="container--image">
-          <img
-            src="assets/images/home/section-comparte/06-img_Comp.jpg"
-            alt="seccion-comparte"
-          />
-        </div>
-      </section>
-      <section class="container_center">
-        <h2>Conecta</h2>
-        <p>
-          ¡Conecta, comparte y acompaña tus rutinas de ejercicio, con una gran
-          comunidad enfocada en los mismos objetivos que tu!
-        </p>
-      </section>
-      <section class="container_center">
-        <div class="container--image">
-          <img
-            src="assets/images/home/section-conecta/01-img_Conc.jpg"
-            alt="seccion-conecta"
-          />
-        </div>
-        <div class="container--image">
-          <img
-            src="assets/images/home/section-conecta/02-img_Conc.jpg"
-            alt="seccion-conecta"
-          />
-        </div>
-        <div class="container--image">
-          <img
-            src="assets/images/home/section-conecta/03-img_Conc.jpg"
-            alt="seccion-conecta"
-          />
-        </div>
-      </section>
+        </article>
+        <nav class="navbar">
+          <ul class="container__center">
+            <li>
+              <a href="#">Imagenes</a>
+            </li>
+            <hr />
+            <li>
+              <a href="#">Imagenes</a>
+            </li>
+            <hr />
+            <li>
+              <a href="#">Imagenes</a>
+            </li>
+            <hr />
+            <li>
+              <a href="#">Imagenes</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </main>
 
-    <footer class="body-container">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <ul>
-        <li><a href="#">Copyright</a></li>
-        <li><a href="#">Privacidad</a></li>
-        <li><a href="#">Area de Soporte</a></li>
-        <li><a href="#">Copyright</a></li>
-        <li><a href="#">Privacidad</a></li>
-        <li><a href="#">Area de Soporte</a></li>
-        <li><a href="#">Copyright</a></li>
-        <li><a href="#">Privacidad</a></li>
-        <li><a href="#">Area de Soporte</a></li>
-        <li><a href="#">Copyright</a></li>
-        <li><a href="#">Privacidad</a></li>
-        <li><a href="#">Area de Soporte</a></li>
-      </ul>
+    <footer class="container__centerX">
+      <div class="box container__center">
+        <p>
+          <small>&copy; 2022 <b>Jhans de la Cruz</b></small>
+        </p>
+      </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
