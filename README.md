@@ -1,2 +1,5 @@
-# proyecto-base
-Repositorio para que mis estudiantes del Bootcamp hagan fork y luego creen un pull request
+# N° Cohorte 02
+
+[Link a la pagina en Github Pages](https://JhansdelaCruz.github.io/BookmarksApp)
+
+[Link al codigo fuente](https://github.com/JhansdelaCruz/BookmarksApp)
