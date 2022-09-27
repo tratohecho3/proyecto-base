@@ -1,67 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="es">
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Ubuntu+Condensed&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/estilos.css" />
-    <link rel="shortcut icon" href="./images/Imagen_1.ico" type="image/x-icon">
-    <title>Bei Desing</title>
-  </head>
-  <body>
-    <div class="container__principal">
-      <header class="header">
-        <img
-          class="header__logo"
-          src="./images/Imagen_1.png"
-          alt="Logo Bei Desing"
-          title="Logo Bei Desing"
-        />
-        <a class="header__enlace" href="./acercade.html">ingresa al mundo Bei</a>
-      </header>
-      <main class="container__suscriber">
-        <h2 class="titulo">Bienvenidos al mundo de Bei</h2>
-        <form class="formulario" action="">
-          <legend class="leyenda">Registrate para mas novedades</legend>
-          <br />
-          <label class="formulario__label" for="nombre">Nombre</label><br /><br />
-          <input
-            class="input"
-            type="text"
-            name="nombre"
-            id="nombre"
-          /><br /><br />
-          <label class="formulario__label" for="apellido">Apellido</label><br /><br />
-          <input
-            class="input"
-            type="text"
-            name="apellido"
-            id="apellido"
-          /><br /><br />
-          <label class="formulario__label" for="email">E-mail</label><br /><br />
-          <input
-            class="input"
-            type="email"
-            id="email"
-            name="email"
-          /><br /><br />
-          <button class="boton" value="Enviar" type="button">Enviar</button>
-          <br /><br />
-        </form>
-      </main>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Señales de televisión</title>
+</head>
+
+<body>
+    <div class="cabecera">
+        <header class="header navbar__modal navbar__modal--closed">
+          <nav class="navbar">
+            <a href="./index.html" class="navbar__column_link anchor"><span>Inicio</span> </a>
+            <a href="./index.html" class="navbar__column_link anchor"><span>Áreas</span> </a>
+            <a href="./index.html" class="navbar__column_link anchor"><span >Admin</span> </a>
+          </nav>
+          <div>
+              <img onclick="closeModal()" src="./img/closed.svg" alt="close logo" class="navbar__menu__icon--close hidden" />
+
+          </div>
+            <img onclick="openModal()" src="./img/menu.svg" alt="menu logo" class="navbar__menu__icon visible" />
     </div>
-    <footer>
-      Desarrollado por &reg; {JSepúlvedaT}<br />
-      <a class="email" href="mailto:jorge.sepulveda.turpie@gmail.com"
-        >jorge.sepulveda.turpie@gmail.com</a
+    <div>
+        </header>
+        <img class="logo" src="./img/layout_set_logo.png" alt="logo-institucional" />
+    </div>
+    <div class="titulo__principal">
+        <h1> Información de señales</h1>
+
+    </div>
+    <main class="principal">
+        <!--Aqui se pintan las tarjetas (Card)-->
+    </main>
+    <footer class="">
+        Desarrollado por &reg; {JSepúlvedaT}<br />
+        <a class="email" href="mailto:jorge.sepulveda.turpie@gmail.com">jorge.sepulveda.turpie@gmail.com</a
       ><br />
       Full Stack Developer
     </footer>
+
+    <script src="./js/script.js"></script>
+    <script>
+      function closeModal(){
+        let modal = document.querySelector('.navbar__modal')
+        let openIcon = document.querySelector('.navbar__menu__icon');
+        let closeIcon = document.querySelector('.navbar__menu__icon--close');
+        let links = document.getElementsByClassName('navbar__column_link');
+        
+        for(link of links){
+          link.classList.add('anchor')
+          
+        }
+        modal.classList.add('navbar__modal--closed');
+        openIcon.classList.remove('opcidad')
+        closeIcon.classList.add('hidden');
+        
+      }
+      function openModal(){
+        
+        let nav = document.querySelector('navbar');
+        let modal = document.querySelector('.navbar__modal')
+        let openIcon = document.querySelector('.navbar__menu__icon');
+        let closeIcon = document.querySelector('.navbar__menu__icon--close');
+        let links = document.getElementsByClassName('navbar__column_link');
+        
+        
+        
+        for(link of links){
+          link.classList.remove('anchor')
+          
+        }
+        modal.classList.remove('navbar__modal--closed');
+        openIcon.classList.add('opcidad')
+        closeIcon.classList.remove('hidden');
+        nav.classList.add('position__navbar');
+        
+      }
+
+
+
+    </script>
   </body>
 </html>
