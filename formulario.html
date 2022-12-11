@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesform.css" />
+    <link rel="icon" type="image/png" href="assets/iconoBitcoin.png" />
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Muchas gracias por tu interes</h1>
+        <h3 class="subtitulo">Permitenos conocerte mejor y nos pondremos en contacto contigo en breve...</h3>
+    </header>
+    <section class="section__form">
+        <form class="formulario">
+            <fieldset class="section--fieldset">
+                <legend>Información de Contacto</legend>
+                <br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Escribe tu nombre..."/> <br><br>
+                <label for="Email">Email:</label>
+                <input type="email" placeholder="Escribe tu email"/> <br><br>
+                <img src="assets/undraw_Investor_update_re_qnuu.png" alt="investor">
+            </fieldset>
+            <br>
+            <fieldset class="section--fieldset2">
+                <legend>Plan de Inversión</legend>
+                <br>
+                <p>¿Cúal es el plan de inversión de tu interés?</p>
+                <select class="seleccion">
+                    <option value="0">Escoge un paquete...</option>
+                    <option value="estandar">Paquete Estandar</option>
+                    <option value="premium">Paquete Premium</option>
+                </select>
+                <img src="assets/undraw_digital_currency_qpak.png" alt="bitcoin" class="imagen1" />
+                <img src="assets/undraw_digital_currency_qpak.png" alt="bitcoin" class="imagen2"  />
+            </fieldset>
+            <br>
+            <fieldset class="section--fieldset3">
+                <p>¿Algún comentario extra?</p>
+                <textarea placeholder="Escribenos un comentario..." class="areaTexto"></textarea>
+                <br><br>
+                <input type="submit" value="Enviar" class="botonEnviar">
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <section class="footer__box">
+            <a href="index.html" class="footer--inicio">Ir a Pagina Principal</a>
+            <p>Copyright ® 2022</p>
+        </section>
+    </footer>
+</body>
+</html>

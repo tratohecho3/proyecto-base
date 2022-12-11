@@ -1,0 +1,136 @@
+/*Configuraciones generales*/
+
+:root{
+    --global-font-size: 36px;
+    --medium-font-size: 17px;
+    --golden-color: rgb(238, 194, 49);
+    --white-color: #fff;
+    --blue-color: #2482ee;
+    --margin-center: 0 auto;
+    --black-color: rgb(0, 0, 0);
+    --small-font-size: 10px;
+    --grey--color: (rgb(160, 160, 153));
+}
+
+body{
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    background-color: var(--white-color);
+    margin: 0;
+    color: var(--black-color);
+}
+
+/*Header*/
+
+header{
+    padding: 30px 35px;
+    text-align: center;
+    background-color: var(--blue-color);
+    color: var(--white-color)
+}
+
+/*Formulario*/
+
+.formulario{
+    padding: 50px 60px;
+    margin: 20px 40px;
+}
+
+input{
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 1px var(--blue-color);
+    border-radius: 2px;
+}
+
+legend{
+    text-align: center;
+}
+
+.section--fieldset{
+    border-radius: 3px;
+    position: relative;
+}
+
+.section--fieldset img{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    left: 750px;
+    bottom: 6px;
+}
+
+.seleccion{
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 1px var(--blue-color);
+    border-radius: 2px;
+}
+option{
+    box-sizing: border-box;
+    border: solid 1px var(--blue-color);
+    border-radius: 2px;
+}
+
+.section--fieldset2 {
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+}
+
+.imagen1{
+    position: absolute;
+    width: 180px;
+    height: 130px;
+    left: 850px;
+    bottom: 6px;
+}
+
+.imagen2{
+    position: absolute;
+    width: 180px;
+    height: 130px;
+    right: 850px;
+    bottom: 6px;
+}
+
+.section--fieldset3{
+    text-align: center;
+}
+
+.areaTexto{
+    padding: 40px 100px;
+}
+
+.botonEnviar{
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    color: var(--white-color);
+    transition: box-shadow 0.3s ease;
+}
+
+.botonEnviar:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+/*Footer*/
+
+footer{
+    background: rgb(54, 47, 250) ; 
+    padding: 30px;
+    color: white;
+}
+
+.footer__box p{
+    font-size: var(--small-font-size);
+    text-align: center;
+}
+
+.footer--inicio:hover{
+    color: lightblue;
+}
+
+
