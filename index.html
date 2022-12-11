@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veterinaria La Familia, con más de 15 años de experiencia se ofrece a disposición del público." />
+    <meta name="author" content="Cristian Monroy">
+    <meta name="keywords" content="Veterinaria La Familia, ProyectoAW">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="generales.css">
+    <link rel="icon" type="image/png" href="images/cara_gato.png">
+    <title>Veterinaria "La Familia"</title>
+</head>
+<body>
+    <header class="header__navegacion">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicio1">Servicios médico-veterinarios</a></li>
+                <li><a href="#servicio2">Servicios a la mascota</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="citas.html" class="boton boton__citas">
+                Apartar cita
+            </a>
+        </nav>
+    </header>
+    <header class="header__contenedor">
+        <section id="inicio">
+            <article>
+                <div class="header__contenido">
+                    <h1 class="titulo">Veterinaria "La Familia"</h1>
+                    <h2 class="subtitulo">Con más de 15 años de experiencia, ofrecemos a disposición del público múltiples cuidados para sus mascotas,
+                        con el cuidado de veterinarios experimentados.
+                    </h2>
+                </div>
+            </article>
+        </section>
+    </header>
+    <section>
+        <article id="servicio1">
+            <div class="article--contenedor servicio">
+                <div class="columna">
+                    <img src="images/servicios-medico_veterinarios.jpg" alt="Servicios médico-veterinarios" class="article__imagen">
+                </div>
+                <div class="columna">
+                    <h1 class="titulo titulo--normal">Servicios médico-veterinarios</h1>
+                    <ul class="listado">
+                        <li>Consulta y vacunación.</li>
+                        <li>Dermatología veterinaria.</li>
+                        <li>Cirugía de hueso y tejidos blandos.</li>
+                        <li>Laboratorio clínico</li>
+                        <li>Departamento de imagenología con rayos X y ultrasonido.</li>
+                        <li>Limpieza y tratamientos dentales.</li>
+                        <li>Hospitalización.</li>
+                        <li>Terapia intensiva con monitoreo cardiovascular y bomba de infusión continua.</li>
+                        <li>Terapia de rehabilitación.</li>
+                        <li>Servicio de urgencias.</li>
+                        <li>Tratamiento oncológico (cáncer), incluyendo cirugía y quimioterapia.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article id="servicio2">
+            <div class="article--contenedor servicio">
+                <div class="columna">
+                    <img src="images/servicios-mascota.jpg" alt="Servicios a la mascota" class="article__imagen">
+                </div>
+                <div class="columna">
+                    <h1 class="titulo titulo--normal">Servicios a la mascota</h1>
+                    <ul class="listado">
+                        <li>Sala de belleza canina y felina.</li>
+                        <li>Hospedaje.</li>
+                        <li>Pet Taxi: servicio de transporte de su hogar hacia nuestras instalaciones.</li>
+                        <li>Venta de alimentos y accesorios para mascotas.</li>
+                        <li>Farmacia veterinaria.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <article id="contacto">
+            <div class="article--contenedor contacto">
+                <h1 class="titulo--pequeno">¿Gusta contactarnos? Rellene los siguientes campos para escribirle lo más pronto posible.</h1>
+                <form>
+                    <label class="form__label" for="usuario_nombre">Nombre:</label>
+                    <input class="form__input" name="nombre" type="text" placeholder="Nombre" id="usuario_nombre" required>
+                    <label class="form__label" for="usuario_email">E-mail:</label>
+                    <input class="form__input" name="email" type="email" placeholder="E-mail" id="usuario_email" required>
+                    <label class="form__label" for="usuario_asunto">Asunto:</label>
+                    <input class="form__input" name="asunto" type="text" placeholder="Asunto" id="usuario_asunto" required>
+                    <label class="form__label" for="usuario_mensaje">Mensaje:</label>
+                    <textarea class="form__textarea" name="mensaje" id="usuario_mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="boton boton__formulario">
+                </form>
+            </div>    
+        </article>
+    </section>
+</body>
+</html>

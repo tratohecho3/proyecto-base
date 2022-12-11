@@ -1,0 +1,46 @@
+:root {
+    --dark-green-color: #00363c;
+    --global-font-size: 1em;
+    --bold-font-weight: bold;
+    --white-color: #fff;
+    --relative-position: relative;
+    --light-blue-color: #00F1E9;
+    --large-font-size: 3em;
+    --medium-font-size: 2em;
+    --small-font-size: 1.25em;
+    --padding-container: 4em 0;
+    --margin-center: 0 auto;
+    --dark-blue-background: #5800c7;
+    --purple-background: #33075e;
+    --blue-background: #5600f4;
+    --turquoise-background: #009e99;
+    --cheese-background: #edf2f8;
+}
+
+header.header__navegacion{
+    top: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 1;
+    height: 4em;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, var(--dark-green-color)), to(#003035));
+    background-image: -o-linear-gradient(top, var(--dark-green-color) 80%, #003035 100%);
+    background-image: linear-gradient(to bottom, var(--dark-green-color) 80%, #003035 100%);
+}
+
+.boton {
+    background-color: var(--light-blue-color);
+    border-radius: 0.2em;
+    transition: background-color .5s;
+}
+
+.boton__formulario:hover{
+    background-color: var(--turquoise-background);
+}
+
+.boton__formulario:active{
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
