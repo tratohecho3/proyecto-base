@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(150, 33, 87);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form__comparte{
+    width: 50%;
+    height: 200px;
+    overflow: scroll;
+}
