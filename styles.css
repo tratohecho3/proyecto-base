@@ -4,14 +4,11 @@
   --blue--: #0079c1;
   --black--: #151515;
 }
-header {
-  width: 100%;
-  height: 120px;
-}
+
 .primer_header {
-  display: inline;
-  /* margin: 0; */
-  /* height: 300px; */
+  display: inline-block;
+  width: 100%;
+  height: 55px;
 }
 .logo_principal {
   width: 84px;
@@ -41,7 +38,7 @@ ul {
 }
 li {
   display: inline;
-  /* padding: 30px; */
+  padding: 30px;
   /* margin-top: 20px; */
 }
 
