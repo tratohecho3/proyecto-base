@@ -21,6 +21,8 @@ header {
   width: 15%;
   height: 100%;
   position: relative;
+  background-color: #0079c1;
+  display: inline-block;
 }
 .logo_esri {
   width: 84px;
@@ -28,4 +30,18 @@ header {
   position: absolute;
   top: 25%;
   left: 25%;
+}
+nav {
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  background-color: yellow;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  float: left;
+  padding-right: 20px;
+  margin-top: 5px;
 }
