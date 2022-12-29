@@ -63,8 +63,9 @@ li {
 .segundo_header {
   width: 100%;
   height: 61px;
-  position: relative;
   background-color: var(--dark-grey--);
+  position: fixed;
+  z-index: 4;
 }
 .nav_title {
   font-size: 20px;
@@ -155,6 +156,9 @@ article {
   color: var(--black--);
   line-height: 20px;
 }
+
+/* CONTENEDOR */
+
 .contenedor {
   background-color: var(--dark-white--);
   width: 100%;
@@ -165,5 +169,96 @@ article {
   text-align: center;
   font-weight: normal;
   padding-top: 3%;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
+}
+
+.data {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(21, 21, 21, 0.4);
+  background-color: white;
+  padding: 15px 15px 40px 15px;
+  width: 20%;
+  margin-left: 3%;
+  display: inline-block;
+}
+.visualization {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(21, 21, 21, 0.4);
+  background-color: white;
+  padding: 15px 15px 40px 15px;
+  width: 20%;
+
+  margin-left: 1%;
+  display: inline-block;
+}
+.spatial {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(21, 21, 21, 0.4);
+  background-color: white;
+  padding: 10px 15px 32px 15px;
+  top: 8px;
+  width: 20%;
+  margin-left: 1%;
+  display: inline-block;
+  position: relative;
+}
+.inteligence {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(21, 21, 21, 0.4);
+  background-color: white;
+  padding: 10px 15px 32px 15px;
+  top: 8px;
+  width: 20%;
+  margin-left: 1%;
+  display: inline-block;
+  position: relative;
+}
+.b_data {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(21, 21, 21, 0.4);
+  background-color: white;
+  padding: 15px 15px 40px 15px;
+  width: 20%;
+  margin-top: 1%;
+  margin-left: 3%;
+  display: inline-block;
+  margin-bottom: 5%;
+}
+.modeling {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(21, 21, 21, 0.4);
+  background-color: white;
+  padding: 15px 15px 40px 15px;
+  width: 20%;
+  margin-top: 1%;
+  margin-left: 1%;
+  display: inline-block;
+}
+.sharing {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(21, 21, 21, 0.4);
+  background-color: white;
+  padding: 15px 15px 40px 15px;
+  width: 20%;
+  margin-top: 1%;
+  margin-left: 1%;
+  display: inline-block;
+}
+.Started {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(21, 21, 21, 0.4);
+  background-color: white;
+  padding: 15px 15px 40px 15px;
+  width: 20%;
+  margin-top: 1%;
+  margin-left: 1%;
+  display: inline-block;
 }
