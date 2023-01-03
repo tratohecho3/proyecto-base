@@ -129,10 +129,11 @@ article {
   top: 35%;
   z-index: 3;
   color: white;
+  left: 30px;
 }
-.SAD {
+.GS {
   font-size: 50px;
-  width: 80%;
+  width: 100%;
   padding-left: 5%;
   font-weight: normal;
 }
@@ -140,21 +141,6 @@ article {
   font-size: 17px;
   padding-left: 5%;
   font-weight: normal;
-}
-.article_img {
-  position: absolute;
-  top: 15%;
-  z-index: 3;
-  left: 50%;
-}
-.p_1 {
-  width: 50%;
-  margin-left: 3%;
-  margin-top: 3%;
-  margin-bottom: 5%;
-  font-size: 17px;
-  color: var(--black--);
-  line-height: 20px;
 }
 
 /* CONTENEDOR */
@@ -172,7 +158,7 @@ article {
   padding-bottom: 4%;
 }
 
-.data {
+/* .pro {
   border-style: solid;
   border-width: 1px;
   border-color: rgba(21, 21, 21, 0.4);
@@ -182,7 +168,7 @@ article {
   margin-left: 3%;
   display: inline-block;
 }
-.visualization {
+.online {
   border-style: solid;
   border-width: 1px;
   border-color: rgba(21, 21, 21, 0.4);
@@ -193,7 +179,7 @@ article {
   margin-left: 1%;
   display: inline-block;
 }
-.spatial {
+.enterprise {
   border-style: solid;
   border-width: 1px;
   border-color: rgba(21, 21, 21, 0.4);
@@ -205,7 +191,7 @@ article {
   display: inline-block;
   position: relative;
 }
-.inteligence {
+.platform {
   border-style: solid;
   border-width: 1px;
   border-color: rgba(21, 21, 21, 0.4);
@@ -216,52 +202,7 @@ article {
   margin-left: 1%;
   display: inline-block;
   position: relative;
-}
-.b_data {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(21, 21, 21, 0.4);
-  background-color: white;
-  padding: 15px 15px 40px 15px;
-  width: 20%;
-  margin-top: 1%;
-  margin-left: 3%;
-  display: inline-block;
-  margin-bottom: 5%;
-}
-.modeling {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(21, 21, 21, 0.4);
-  background-color: white;
-  padding: 15px 15px 40px 15px;
-  width: 20%;
-  margin-top: 1%;
-  margin-left: 1%;
-  display: inline-block;
-}
-.sharing {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(21, 21, 21, 0.4);
-  background-color: white;
-  padding: 15px 15px 40px 15px;
-  width: 20%;
-  margin-top: 1%;
-  margin-left: 1%;
-  display: inline-block;
-}
-.Started {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(21, 21, 21, 0.4);
-  background-color: white;
-  padding: 15px 15px 40px 15px;
-  width: 20%;
-  margin-top: 1%;
-  margin-left: 1%;
-  display: inline-block;
-}
+} */
 
 footer {
   width: 100%;
