@@ -118,15 +118,17 @@ a.text_nav_2:active {
 article {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .img_curvas_de_nivel {
   position: relative;
   z-index: 2;
+  width: 100%;
+  height: 50%;
 }
 .titulo {
   position: absolute;
-  top: 35%;
+  top: 25%;
   z-index: 3;
   color: white;
   left: 30px;
@@ -146,16 +148,24 @@ article {
 /* CONTENEDOR */
 
 .contenedor {
-  background-color: var(--dark-white--);
   width: 100%;
   height: fit-content;
   position: relative;
 }
-.problems_text {
+.titulo_contenedor {
   text-align: center;
   font-weight: normal;
-  padding-top: 3%;
-  padding-bottom: 4%;
+  padding-top: 2%;
+}
+.separador {
+  border-bottom: 4px solid #48e2cb;
+  width: 50px;
+  border-top: none;
+}
+.p_contenedor {
+  text-align: center;
+  width: 55%;
+  padding-left: 22.5%;
 }
 
 /* .pro {
