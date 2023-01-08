@@ -15,6 +15,7 @@
     ></script>
   </head>
   <body>
+    <!-- primer header -->
     <header>
       <div class="primer_logo">
         <img src="imagenes/esri-TM.jpg" class="logo_esri" />
@@ -33,6 +34,7 @@
         <i class="fa-regular fa-user icon_nav"></i>
       </div>
     </header>
+    <!-- segundo header -->
     <section class="segundo_header">
       <div class="nav_title">
         <a
@@ -60,6 +62,7 @@
         </ul>
       </nav>
     </section>
+    <!-- titulo de la pagina con fondo-->
     <article>
       <img
         src="imagenes/overview-banner-background.jpg"
@@ -70,6 +73,7 @@
         <h3 class="subtitulo">Analysis that fits your needs</h3>
       </div>
     </article>
+    <!-- primer contenedor-->
     <div class="contenedor">
       <div>
         <h1 class="titulo_contenedor">Explore ArcGIS products</h1>
@@ -81,68 +85,98 @@
         </p>
       </div>
     </div>
+    <!-- tercer navegador NO funcional -->
     <nav class="nav_3">
-      <a href="#">Start with the basics</a>
+      <div class="nav_3__iconos">
+        <i class="fa-solid fa-book-open-reader nav_3__iconos--grandes"></i>
+        <a href="#" class="nav_3__iconos--texto">
+          <br />
+          Start with the basics</a
+        >
+      </div>
+      <div class="nav_3__iconos">
+        <i class="fa-solid fa-chart-line nav_3__iconos--grandes"></i>
+        <a href="#" class="nav_3__iconos--texto"
+          ><br />Add specialized analysis</a
+        >
+      </div>
+      <div class="nav_3__iconos">
+        <i class="fa-solid fa-database nav_3__iconos--grandes"></i>
+        <a href="#" class="nav_3__iconos--texto"
+          ><br />Analyze big and real-time data</a
+        >
+      </div>
+      <div class="nav_3__iconos">
+        <i class="fa-solid fa-screwdriver-wrench nav_3__iconos--grandes"></i>
+        <a href="#" class="nav_3__iconos--texto"
+          ><br />Integrate data science tools</a
+        >
+      </div>
     </nav>
-    <!-- <div class="pro">
-        <img src="imagenes/product-arcgispro-3col.jpg" />
-        <h3>ArcGIS Pro</h3>
-        <p>Next-generation Desktop GIS.</p>
-        <p>
-          Capabilities: data engineering, visualization, exploration, spatial
-          analysis, machine learning, AI, big data analytics, modeling and
-          scripting.
-        </p>
-        <a
-          href="https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview"
-          class="arc_link"
-          >ArcGIS Pro</a
-        >
-      </div>
-      <div class="online">
-        <img src="imagenes/product-arcgisonline-3col.jpg" />
-        <h3>ArcGIS Online</h3>
-        <p>Software-as-a-service mapping and analysis.</p>
-        <p>
-          Capabilities: sharing, collaboration, visualization, exploration, and
-          spatial analysis.
-        </p>
-        <a
-          href="https://www.esri.com/en-us/arcgis/products/arcgis-online/overview"
-          class="arc_link"
-          >ArcGIS Online</a
-        >
-      </div>
-      <div class="enterprise">
-        <img src="imagenes/product-arcgisenterprise-3col.jpg" />
-        <h3>ArcGIS Enterprise</h3>
-        <p>Mapping & analysis behind your firewall</p>
-        <p>
-          Capabilities: sharing, collaboration, visualization, exploration, and
-          spatial analysis.
-        </p>
-        <a
-          href="https://www.esri.com/en-us/arcgis/products/arcgis-enterprise/overview"
-          class="arc_link"
-          >ArcGIS Enterprise</a
-        >
-      </div>
-      <div class="platform">
-        <img src="imagenes/product-arcgisplatform-card.jpg" />
-        <h3>ArcGIS Platform</h3>
-        <p>Platform as a service</p>
-        <p>
-          Integrate location into apps and business systems with the most
-          comprehensive set of location services, data, and mapping tools
-          available.
-        </p>
-        <a
-          href="https://www.esri.com/en-us/arcgis/products/arcgis-platform/overview"
-          class="arc_link"
-          >ArcGIS Platform</a
-        > -->
-    <!-- </div> -->
+    <!-- contenido del tercer navegador -->
+    <div class="start_with_the_basics">
+      <a
+        href="https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview"
+        class="arc_link"
+        ><div class="pro">
+          <img src="imagenes/product-arcgispro-3col.jpg" />
+          <h3>ArcGIS Pro</h3>
+          <p>Next-generation Desktop GIS.</p>
+          <p>
+            Capabilities: data engineering, visualization, exploration, spatial
+            analysis, machine learning, AI, big data analytics, modeling and
+            scripting.
+          </p>
+          <p>ArcGIS Pro <i class="fa-solid fa-arrow-right-long"></i></p></div
+      ></a>
+      <a
+        href="https://www.esri.com/en-us/arcgis/products/arcgis-online/overview"
+        class="arc_link"
+        ><div class="online">
+          <img src="imagenes/product-arcgisonline-3col.jpg" />
+          <h3>ArcGIS Online</h3>
+          <p>Software-as-a-service mapping and analysis.</p>
+          <p class="start_with_the_basics--hight">
+            Capabilities: sharing, collaboration, visualization, exploration,
+            and spatial analysis.
+          </p>
 
+          <p>ArcGIS Online <i class="fa-solid fa-arrow-right-long"></i></p></div
+      ></a>
+      <a
+        href="https://www.esri.com/en-us/arcgis/products/arcgis-enterprise/overview"
+        class="arc_link"
+        ><div class="enterprise">
+          <img src="imagenes/product-arcgisenterprise-3col.jpg" />
+          <h3>ArcGIS Enterprise</h3>
+          <p>Mapping & analysis behind your firewall</p>
+          <p class="start_with_the_basics--hight">
+            Capabilities: sharing, collaboration, visualization, exploration,
+            and spatial analysis.
+          </p>
+
+          <p>
+            ArcGIS Enterprise <i class="fa-solid fa-arrow-right-long"></i>
+          </p></div
+      ></a>
+      <a
+        href="https://www.esri.com/en-us/arcgis/products/arcgis-platform/overview"
+        class="arc_link"
+        ><div class="platform">
+          <img src="imagenes/product-arcgisplatform-card.jpg" />
+          <h3>ArcGIS Platform</h3>
+          <p>Platform as a service</p>
+          <p>
+            Integrate location into apps and business systems with the most
+            comprehensive set of location services, data, and mapping tools
+            available.
+          </p>
+          <p>
+            ArcGIS Platform <i class="fa-solid fa-arrow-right-long"></i>
+          </p></div
+      ></a>
+    </div>
+    <!-- footer -->
     <footer>
       <ul>
         <li>
