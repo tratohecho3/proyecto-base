@@ -1,2 +1,4 @@
-# proyecto-base
-Repositorio para que mis estudiantes del Bootcamp hagan fork y luego creen un pull request
+Autora: Karla Villarroel
+Numero de cohorte: 3
+URL Git Hub Pages:
+https://karlazvb.github.io/proyecto-base/
