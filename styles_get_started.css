@@ -320,7 +320,49 @@ a.arc_link:active {
   border-color: var(--blue--);
   border-width: 3px;
 }
-
+/* Formlario */
+form {
+  color: white;
+  background-color: var(--dark-grey--);
+  width: 100%;
+  height: fit-content;
+}
+.form_title_subtitle {
+  padding-top: 50px;
+  text-align: center;
+}
+.form_content {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.form_box {
+  background-color: var(--dark-grey--);
+  color: white;
+  border: solid;
+  border-color: grey;
+  border-width: 1px;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+.form_policy {
+  font-size: 12px;
+}
+.form_explanation {
+  font-size: 12px;
+}
+.Submit {
+  background-color: #0079c1;
+  padding: 11px 15px;
+  color: var(--black--);
+  border-style: hidden;
+  font-size: 16px;
+  margin-left: 70%;
+  margin-bottom: 100px;
+}
+.form_policy_link {
+  text-decoration: none;
+}
 /* Footer */
 footer {
   width: 100%;
