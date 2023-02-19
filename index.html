@@ -1,102 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Veterinaria La Familia, con más de 15 años de experiencia se ofrece a disposición del público." />
+    <meta name="description" content="Servicios Técnicos &quot;Cristian&quot;: Ponemos a disposición del público nuestros 5 años de experiencia en
+    reparación de servicios de cómputo." />
     <meta name="author" content="Cristian Monroy">
-    <meta name="keywords" content="Veterinaria La Familia, ProyectoAW">
+    <meta name="keywords" content="Servicios Técnicos &quot;Cristian&quot;, ProyectoAW">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="generales.css">
-    <link rel="icon" type="image/png" href="images/cara_gato.png">
-    <title>Veterinaria "La Familia"</title>
+    <link rel="icon" type="image/png" href="images/computer.png">
+    <title>Servicios Técnicos "Cristian"</title>
+    <script src="https://kit.fontawesome.com/14a5e93892.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header__navegacion">
+    <header class="contenedor--centro barra-navegacion">
         <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicio1">Servicios médico-veterinarios</a></li>
-                <li><a href="#servicio2">Servicios a la mascota</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <a href="citas.html" class="boton boton__citas">
-                Apartar cita
-            </a>
+            <div class="menu-hamburguesa">
+                <i class="menu__boton--abierto fa-solid fa-bars texto--mediano texto--blanco" onclick="abrirModal()"></i>
+                <i class="escondido menu__boton--cerrado fa-solid fa-xmark texto--mediano texto--blanco" onclick="cerrarModal()"></i>
+            </div>
+            <div class="header__navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#opiniones">Opiniones</a>
+                <a href="#contacto">Contacto</a>
+            </div>
         </nav>
     </header>
-    <header class="header__contenedor">
-        <section id="inicio">
-            <article>
-                <div class="header__contenido">
-                    <h1 class="titulo">Veterinaria "La Familia"</h1>
-                    <h2 class="subtitulo">Con más de 15 años de experiencia, ofrecemos a disposición del público múltiples cuidados para sus mascotas,
-                        con el cuidado de veterinarios experimentados.
-                    </h2>
-                </div>
-            </article>
-        </section>
-    </header>
-    <section>
-        <article id="servicio1">
-            <div class="article--contenedor servicio">
-                <div class="columna">
-                    <img src="images/servicios-medico_veterinarios.jpg" alt="Servicios médico-veterinarios" class="article__imagen">
-                </div>
-                <div class="columna">
-                    <h1 class="titulo titulo--normal">Servicios médico-veterinarios</h1>
-                    <ul class="listado">
-                        <li>Consulta y vacunación.</li>
-                        <li>Dermatología veterinaria.</li>
-                        <li>Cirugía de hueso y tejidos blandos.</li>
-                        <li>Laboratorio clínico</li>
-                        <li>Departamento de imagenología con rayos X y ultrasonido.</li>
-                        <li>Limpieza y tratamientos dentales.</li>
-                        <li>Hospitalización.</li>
-                        <li>Terapia intensiva con monitoreo cardiovascular y bomba de infusión continua.</li>
-                        <li>Terapia de rehabilitación.</li>
-                        <li>Servicio de urgencias.</li>
-                        <li>Tratamiento oncológico (cáncer), incluyendo cirugía y quimioterapia.</li>
-                    </ul>
-                </div>
-            </div>
-        </article>
-        <article id="servicio2">
-            <div class="article--contenedor servicio">
-                <div class="columna">
-                    <img src="images/servicios-mascota.jpg" alt="Servicios a la mascota" class="article__imagen">
-                </div>
-                <div class="columna">
-                    <h1 class="titulo titulo--normal">Servicios a la mascota</h1>
-                    <ul class="listado">
-                        <li>Sala de belleza canina y felina.</li>
-                        <li>Hospedaje.</li>
-                        <li>Pet Taxi: servicio de transporte de su hogar hacia nuestras instalaciones.</li>
-                        <li>Venta de alimentos y accesorios para mascotas.</li>
-                        <li>Farmacia veterinaria.</li>
-                    </ul>
-                </div>
-            </div>
-        </article>
+    <section id="inicio" class="contenedor--centro seccion-bienvenida">
+        <div class="inicio contenedor--centro">
+            <h1 class="texto--grande texto--blanco titulo-bienvenida">Servicios Técnicos <span>"Cristian"</span></h1>
+            <p class="texto--mediano texto--centrado texto--blanco parrafo-bienvenida">Ponemos a disposición del público nuestros 5 años de experiencia en reparación de servicios de cómputo.</p>
+        </div>
     </section>
-    <section>
-        <article id="contacto">
-            <div class="article--contenedor contacto">
-                <h1 class="titulo--pequeno">¿Gusta contactarnos? Rellene los siguientes campos para escribirle lo más pronto posible.</h1>
-                <form>
-                    <label class="form__label" for="usuario_nombre">Nombre:</label>
-                    <input class="form__input" name="nombre" type="text" placeholder="Nombre" id="usuario_nombre" required>
-                    <label class="form__label" for="usuario_email">E-mail:</label>
-                    <input class="form__input" name="email" type="email" placeholder="E-mail" id="usuario_email" required>
-                    <label class="form__label" for="usuario_asunto">Asunto:</label>
-                    <input class="form__input" name="asunto" type="text" placeholder="Asunto" id="usuario_asunto" required>
-                    <label class="form__label" for="usuario_mensaje">Mensaje:</label>
-                    <textarea class="form__textarea" name="mensaje" id="usuario_mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <input type="submit" value="Enviar" class="boton boton__formulario">
-                </form>
-            </div>    
-        </article>
+    <section id="servicios" class="seccion-servicios">
+        <h2 class="texto--mediano texto--centrado servicios--titulo">Servicios que ofrecemos: </h2>
+        <div class="contenedor-servicios">
+            <div class="contenedor-descripcion-servicio contenedor--redondeado">
+                <div class="texto--centrado servicio__imagen">
+                    <i class="texto--purpura servicio fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div class="servicio__descripcion">
+                    <p class="texto--purpura texto--pequeno">En nuestras sucursales, nos dedicamos al mantenimiento y reparación de computadoras. Nos caracterizamos por buscar hasta las últimas instancias, revivir equipos
+                        que ya no tenían buen funcionamiento, así mismo, tenemos los conocimientos tanto técnicos y prácticos para optimizar los equipos de nuestros clientes.
+                    </p>
+                </div>
+            </div>
+            <div class="contenedor-descripcion-servicio contenedor--redondeado">
+                <div class="texto--centrado servicio__imagen">
+                    <i class="texto--purpura servicio fa-solid fa-store"></i>    
+                </div>
+                <div>
+                    <p class="texto--purpura texto--pequeno">También contamos con una tienda en cada sucursal, ya que, gracias a nuestros proveedores, nuestras sucursales se abastecen de accesorios y equipos de cómputo de
+                        cualquier variedad en cuanto a calidad y necesidades de nuestros clientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="opiniones" class="seccion-opiniones">
+        <h2 class="texto--mediano texto--centrado opiniones--titulo texto--blanco">Algunas opiniones de nuestros clientes:</h2>
+        <div class="contenedor-opiniones">
+            <div class="contenedor-descripcion-opinion contenedor--redondeado">
+                <div class="contenedor-imagen">
+                    <img class="contenedor-descripcion-opinion__imagen" src="images/Elena.jpg" alt="Elena Castillo">
+                </div>
+                <div class="contenedor-descripcion">
+                    <h3 class="texto--mediano">Elena Castillo</h3>
+                    <p class="texto--pequeno">
+                        "El técnico es muy amable y responsable, respondió a mis necesidades a cabalidad. Definitivamente recomiendo el servicio, el personal es muy
+                        ético profesionalmente".
+                    </p>
+                </div>
+            </div>
+            <div class="contenedor-descripcion-opinion contenedor--redondeado">
+                <div class="contenedor-imagen">
+                    <img class="contenedor-descripcion-opinion__imagen" src="images/Sergio.jpg" alt="Sergio Álvarez">
+                </div>
+                <div class="contenedor-descripcion">
+                    <h3 class="texto--mediano">Sergio Álvarez</h3>
+                    <p class="texto--pequeno">
+                        "Jamás daría una retroalimentación nada más como propaganda, pero debo mencionar que realmente estoy complacido con la atención,
+                        todos son muy amables aquí, la relación precio-calidad sí es bastante acorde, me regreso feliz a casa por la atención brindada."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contacto" class="contacto contenedor--centro">
+        <div class="contenedor-contacto">
+            <h2 class="texto--mediano texto--centrado contacto--titulo texto--blanco">¿Gusta contactarnos? Déjenos un mensaje</h2>
+            <form class="formulario-contacto">
+                <label class="label-campo texto--blanco texto--pequeno" for="nombre">Nombre:</label>
+                <input class="campo texto--pequeno" type="text" name="nombre" placeholder="Nombre" required>
+                <label class="label-campo texto--blanco texto--pequeno" for="correo">Correo:</label>
+                <input class="campo texto--pequeno" type="email" name="correo" placeholder="Ej.: correo@dominio.com" required>
+                <label class="label-campo texto--blanco texto--pequeno" for="asunto">Asunto:</label>
+                <input class="campo texto--pequeno" type="text" name="asunto" placeholder="Asunto" required>
+                <label class="label-campo texto--blanco texto--pequeno" for="mensaje">Mensaje:</label>
+                <textarea class="campo texto--pequeno" name="mensaje"  cols="50" rows="4" placeholder="Mensaje" required></textarea>
+                <input type="submit" value="Enviar" class="boton texto--pequeno">
+            </form>
+        </div>
+    </footer>
+    <script src="script.js"></script>
     </section>
 </body>
 </html>
