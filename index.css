@@ -500,16 +500,6 @@ span {
         background-color: var(--light-pink-color);
     }
 
-    /* Inicio */
-    /*
-    .titulo-bienvenida{
-        font-size: var(--mobile-font-size-mediano);
-    }
-
-    .parrafo-bienvenida{
-        font-size: var(--font-size-pequeno);
-    }*/
-
     @-webkit-keyframes escribiendo {
         from {
             width: 0%;
