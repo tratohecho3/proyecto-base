@@ -5,4 +5,4 @@ Autor: Reynaldo Antonio Castaño Ruiz
 
 Cohorte # 3
 
-Github Page: https://reyantonio12.github.io/proyecto-base-boorcamp/
+Github Page: https://reyantonio12.github.io/FotosOnlineCom/
