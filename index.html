@@ -4,191 +4,136 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Esri_clon</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="imagenes/esri-icon.png" />
-
-    <!-- Script para agregar los emoticones de fontaersome -->
     <script
       src="https://kit.fontawesome.com/04d314336c.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <div class="primer_logo">
-        <img src="imagenes/esri-TM.jpg" class="logo_esri" />
-      </div>
-      <nav class="nav_1">
-        <ul>
-          <li>Products</li>
-          <li>Industries</li>
-          <li>Support & Services</li>
-          <li>Stories</li>
-          <li>About</li>
-        </ul>
+    <div class="gradient">
+      <h3 class="logo">GIS</h3>
+      <nav class="nav--selection--top nav_modal_abierto">
+        <div class="icon--close hidden">
+          <i class="fa-solid fa-circle-xmark" onclick="closeModal()"></i>
+        </div>
+        <p class="nav--selection">OUR COMPETENSES</p>
+        <p class="nav--selection">CASES</p>
+        <p class="nav--selection">RMM SOFTWARE</p>
+        <p class="nav--selection">ABOUT US</p>
+        <p class="nav--selection">CONTACTS</p>
       </nav>
-      <div class="iconos_navegacion">
-        <i class="fa-solid fa-magnifying-glass icon_nav"></i>
-        <i class="fa-regular fa-user icon_nav"></i>
+      <div class="icon--menu hidden">
+        <i class="fa-solid fa-bars" onclick="openModal()"></i>
       </div>
-    </header>
-    <section class="segundo_header">
-      <div class="nav_title">
-        <a
-          href="https://www.esri.com/en-us/arcgis/products/spatial-analytics-data-science/overview"
-          class="text_nav_2"
-          >Spatial Analysis and Data Science</a
-        >
+      <section class="title">
+        <h1 class="mainTitle">GIS <br />UKRAINE</h1>
+      </section>
+    </div>
+
+    <section class="video--background">
+      <video autoplay loop muted class="video--autoplay">
+        <source
+          src="http://gis-ua.com/wp-content/uploads/1.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div class="work--options">
+        <h3 class="second-title">Our competencies</h3>
+
+        <div class="work--options content">
+          <p class="dot--animation">
+            <i class="fa-solid fa-circle"></i> <br />DEFENCE
+          </p>
+          <p class="dot--animation">
+            <i class="fa-solid fa-circle"></i> <br />METEOROLOGY
+          </p>
+          <p class="dot--animation">
+            <i class="fa-solid fa-circle"></i> <br />ENERGETICS
+          </p>
+          <p class="dot--animation">
+            <i class="fa-solid fa-circle"></i> <br />HYDROLOGY
+          </p>
+          <p class="dot--animation">
+            <i class="fa-solid fa-circle"></i> <br />MARITIME
+          </p>
+          <p class="dot--animation">
+            <i class="fa-solid fa-circle"></i> <br />AVIATION
+          </p>
+          <p class="dot--animation">
+            <i class="fa-solid fa-circle"></i>
+            <br />INTELLIGENT<br />
+            TRANSPORTATION<br />
+            SYSTEMS
+          </p>
+        </div>
       </div>
-      <nav class="nav_2">
-        <ul>
-          <li>
-            <a href="index.html" class="text_nav_2">Overview</a>
-          </li>
-          <li>Capabilities</li>
-          <li>
-            <a
-              href="https://www.esri.com/en-us/arcgis/products/spatial-analytics-data-science/events"
-              class="text_nav_2"
-              >Events</a
-            >
-          </li>
-          <li>
-            <a href="get_started.html" class="boton boton_started text_nav_2"
-              >Get Started</a
-            >
-          </li>
-        </ul>
-      </nav>
     </section>
-    <article>
-      <img
-        src="imagenes/overview-banner-background.jpg"
-        class="img_curvas_de_nivel"
-      />
-      <div class="titulo">
-        <h1 class="SAD">Spatial Analysis and Data Science</h1>
-        <h3 class="subtitulo">Bring location to analytics</h3>
-      </div>
-      <img src="imagenes/overview-banner-layerstack.png" class="article_img" />
-    </article>
-    <div class="p_1">
-      <p>
-        Connect the seemingly disconnected with the most comprehensive set of
-        analytical methods and spatial algorithms available. Use location as the
-        connective thread to uncover hidden patterns, improve predictive
-        modeling, and create a competitive edge. Leverage the power of spatial
-        analysis and data science on demand and at scale with ArcGIS.
-      </p>
-    </div>
-    <div class="contenedor">
+    <!-- <section class="US">
       <div>
-        <h1 class="problems_text">Translate problems into spatial answers</h1>
-      </div>
-      <div class="data">
-        <img src="imagenes/data_eng.png" />
-        <h3>Data engineering</h3>
+        <h3>We create</h3>
         <p>
-          Use out-of-the-box tools and data science libraries to read,
-          transform, clean, and enrich your data.
+          Our company was established by a group of like-minded persons whose
+          main idea was to create socially and economically effective products
+          and solutions.
         </p>
+        <p>ABOUT US</p>
       </div>
-      <div class="visualization">
-        <img src="imagenes/visualization.png" />
-        <h3>Visualization and exploration</h3>
-        <p>
-          Create beautiful maps and dynamic charts to visually investigate your
-          data.<br /><br />
-        </p>
+      <div>
+        <p>21</p>
+        <p>Projects</p>
       </div>
-      <div class="spatial">
-        <img src="imagenes/spacial.png" />
-        <h3>Spatial analysis</h3>
-        <p>
-          Bring location data into your analysis. Use more than 1,000 analytical
-          tools in ArcGIS and integrate packages from the data science
-          ecosystem.
-        </p>
+    </section>
+    <section class="projects">
+      <div>
+        <p>PROJECT</p>
+        <h3>Premium meteorological instruments</h3>
+        <h3>supplier for Aviation</h3>
       </div>
-      <div class="inteligence">
-        <img src="imagenes/machine.png" />
-        <h3>Machine learning and artificial intelligence</h3>
-        <p>
-          Easily integrate spatial analysis into machine learning models to
-          solve complex spatial problems.
-        </p>
+      <div>
+        <p>PROJECT</p>
+        <h3>Road Maintenance</h3>
+        <h3>Management Software</h3>
       </div>
-      <div class="b_data">
-        <img src="imagenes/data.png" />
-        <h3>Big data analytics</h3>
-        <p>
-          Transform massive spatial data into manageable information. Analyze
-          and display large volumes of streaming data.
-        </p>
+      <div>
+        <p>PROJECT</p>
+        <h3>Hydrological Monitoring</h3>
+        <h3>Software</h3>
       </div>
-      <div class="modeling">
-        <img src="imagenes/modeling.png" />
-        <h3>Modeling and scripting</h3>
-        <p>
-          Automate processes and extend functionality using ArcGIS, Python, and
-          other data science packages.
-        </p>
-      </div>
-      <div class="sharing">
-        <img src="imagenes/sharing.png" />
-        <h3>Sharing and collaboration</h3>
-        <p>
-          Effectively communicate and share complex analysis results through
-          visually stunning maps and apps.
-        </p>
-      </div>
-      <div class="Started">
-        <img src="imagenes/started.png" />
-        <h3>Get started</h3>
-        <p>
-          Translate business issues into spatial answers. Explore ArcGIS
-          products that best fit your needs.
-        </p>
-      </div>
-    </div>
+    </section>-->
     <footer>
-      <ul>
-        <li>
-          <a
-            href="https://www.esri.com/en-us/privacy/overview"
-            class="link_footer"
-            >Privacy</a
-          >
-        </li>
-        <li>
-          <a href="#" class="link_footer">Manage Cookies</a>
-        </li>
-        <li>
-          <a
-            href="https://www.esri.com/en-us/accessibility/overview"
-            class="link_footer"
-            >Accessibility</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.esri.com/en-us/legal/overview"
-            class="link_footer"
-            >Legal</a
-          >
-        </li>
-        <li>
-          <a href="https://www.esri.com/en-us/sitemap" class="link_footer"
-            >Sitemap</a
-          >
-        </li>
-        <li>
-          <a href="https://trust.arcgis.com/en/" class="link_footer"
-            >Trust Center</a
-          >
-        </li>
-      </ul>
+      <div class="center--text">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Kyiv 04210 Heroiv Stalingradu 24A of. 259</p>
+        <p>ON THE MAP</p>
+      </div>
+      <div class="center--text">
+        <i class="fa-regular fa-envelope"></i>
+        <p>gis.ua.inform@gmail.com</p>
+        <p>SEND A LETTER</p>
+      </div>
+      <div class="center--text">
+        <i class="fa-solid fa-phone"></i>
+        <p>SALES DEPARTMENT</p>
+      </div>
     </footer>
+    <script>
+      function closeModal() {
+        let modal = document.querySelector(".nav_modal_abierto");
+        let closeIcon = document.querySelector(".icon--close");
+        let links = document.getElementsByClassName("nav--selection");
+
+        modal.classList.add("hidden");
+        modal.classList.remove("visible");
+      }
+      function openModal() {
+        let modal = document.querySelector(".nav_modal_abierto");
+
+        modal.classList.add("visible");
+        modal.classList.remove("hidden");
+      }
+    </script>
   </body>
 </html>
