@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoCompleto</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="container--center">
+
+        <nav class="navbar">
+
+            <div class="nav__logo">
+                <p>MC- Desarrollos Web</p>
+            </div>
+                
+            <div>
+                <ul class="nav__menu">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__icons">
+                <img class="hidden nav__icon--close" src="assets/close.svg" alt="Close Logo" onclick="closeModal()">
+                <img class="nav__icon--open" src="assets/menu.svg" alt="Menu Logo" onclick="openModal()">
+            </div>
+
+        </nav>
+
+        <div class="header__intro container--center">
+            <div class="box">
+                <h1 class="text--xl">Te ayudamos a <br/>
+                    <span class="text--xxl">escalar</span> <br/>
+                    tu negocio!</h1>
+                <p class="text--l">Llega a más clientes desde aquí.</p>             
+                <button class="intro__btn" type="button">
+                    <img class="intro__btn__img" src="assets/let'sgo.jpg" alt="Logo menu">
+                </button>
+            </div>
+        </div>    
+       
+    </header>
+
+    <section>
+        <div class="box">
+            <article class="container__section container--center">
+                <div>
+                    <h1 class="text--l text--center">Tus clientes ya no están ahí.. <br/>
+                        ...donde antes!</h1>
+                    <p class="text--m text--center">No te vayas!</p>
+                    <p class="text--m text--center">Nadie tiene que irse, <br/>
+                        sólo encontrarse de otro modo.</p>    
+                </div>
+                <div>
+                    <img src="assets/negocioCerradojpg.jpg" alt="">
+                </div>
+            </article>
+        </div>  
+    </section>
+
+    <section>
+        <div class="box">
+            <article class="container__section container--center">
+                <div class="article__img--rigth">
+                    <img src="assets/ecommerce.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="text--l text--center">Ahora tus clientes están en todos lados!</h1>  
+                    <p class="text--m text--center">Y tú tienes que estar también.</p>
+                    <p class="text--m text--center">Para eso estaremos contigo.</p>    
+                </div>
+            </article>
+        </div>  
+    </section>
+
+    <section>
+        <div class="box">
+            <article class="container__section container--center">
+                <div>
+                    <h1 class="text--l text--center">Tus clientes y tu negocio en el mismo lugar: la web.</h1>  
+                    <p class="text--m text--center">Tus productos o servicios serán mostrados a tus potenciales clientes.</p>    
+                </div>
+                <div class="article__img--rigth">
+                    <img src="assets/ventas.jpeg" alt="">
+                </div>
+            </article>
+        </div>  
+    </section>
+
+    <footer class="container--center">
+        <form>
+            <label for="name">Nombre completo: </label> <br/>
+            <input type="text" name="name" placeholder="Dhoe Jhon"> <br/>
+
+            <label for="email">Email: </label> <br/>
+            <input type="text" name="email" placeholder="dhoeJhon@gmail.com"> <br/>
+
+            <label for="message">Message: </label> <br/>
+            <textarea name="message" id="" cols="30" rows="7" placeholder="Message"></textarea>
+
+            <div class="container--center">
+                <input type="submit" value="ENVIAR">
+            </div>
+
+        </form>
+        
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
