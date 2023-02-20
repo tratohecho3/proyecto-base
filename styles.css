@@ -1,230 +1,307 @@
-/*Generalidades*/
-
 :root{
-    --global-font-size: 36px;
-    --medium-font-size: 17px;
-    --golden-color: rgb(238, 194, 49);
-    --white-color: #fff;
-    --blue-color: #2482ee;
-    --margin-center: 0 auto;
-    --black-color: rgb(0, 0, 0);
-    --small-font-size: 10px;
-    --grey--color: (rgb(160, 160, 153));
+    --general-font: 'Quicksand', sans-serif;
+    --yellow-color: #e9f581;
+    --gray-color: #afa3a3;
+    --black-color: #000000;
+    --white-color: #eee8e8;
+    --gray-text-color: #6e6c6c;
+    --dark-gray-color: #35343479;
+    --font-weight-small: 25px;
+    --font-weight-medium: 35px;
+    --font-weight-large: 45px;
+    --font-weight-Xlarge: 55px;
+    --purple-color: #a266b4;
+    --footer-color: #1b1082;
+}
+
+html{
+    font-family: var(--general-font);
 }
 
 body{
-    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
-    font-size: var(--global-font-size);
-    background-color: var(--white-color);
     margin: 0;
-    color: var(--black-color);
+    padding: 0;
 }
 
-a{
-    text-decoration: none;
-}
+/*Barra de navegacion*/
 
-
-/*Navigation Bar*/
-
-.imagen{
-    width: 250px;
-    height: 180px;
-    padding: 10px;
-}
-
-header{
-    position: relative;
-}
-
-nav{
-    position: absolute;
-    left: 500px;
-    bottom: 100px;
-}
-
-.nav__button, .action__button{
-    padding: 10px 30px;
-    margin: 0 25px;
-    font-size: var(--medium-font-size);
-}
-
-.button{
-    border-radius: 3px;
-    color: var(--white-color);
-    background-color: var(--blue-color);
-    transition: box-shadow 0.3s ease;
-} 
-
-.button:hover{
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
-}
-
-/*Section del header*/
-
-.header__introduction{
-    margin: var(--margin-center);
-    text-align: center;
-    background-image: linear-gradient(rgba(212, 212, 212, 0.5), rgba(102, 100, 100, 0.5)), url(assets/undraw_Bitcoin_re_urgq.png);
-    padding: 50px;
-}
-
-.titulo{
-    font-size: 60px;
-}
-
-.subtitulo{
-    font-size: var(--medium-font-size);
-}
-
-.fondo{
-    position: absolute;
+.navegacionContenedor{
+    position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    height: 400px;
-}
-
-/* .fondo__img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
-
-
-/*Secciones de information*/
-
-.section__box{
-    background-image: linear-gradient(rgba(247, 240, 240, 0.733), rgba(190, 189, 189, 0.719)), url(assets/undraw_Transfer_money_re_6o1h.png);
+    background-color: var(--white-color);
 }
 
-.section1--encabezado{
-    font-size: 35px ;
-    text-decoration: underline;
-    text-decoration-color: var(--blue-color);
+.contenedor__elementos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.informacion{
-    font-size: var(--medium-font-size);
+.contenedor--logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-.section1{
-    margin: 10px;
-    border: 1px var(--blue-color) groove;
+.contenedor--logo img{
+    width: 110px;
+    height: 110px;
+}
+
+.contenedor--dropdown{
+    align-self: center;
+}
+
+/*Menu desplegable*/
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline-block;
+}
+
+.Dropdown{
+    border: 1px solid #792f75;
     border-radius: 3px;
-    padding: 20px 0;
+}
+
+.contenedor--dropdown a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    
+}
+
+.contenedor--dropdown a:hover{
+    background-color: var(--yellow-color);
+}
+
+.menuDropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.Dropdown:hover .menuDropdown{
+    display: block;
+}
+
+/*Seccion de Inicio*/
+
+.tituloContenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 120px;
     text-align: center;
 }
 
-.section1--encabezado2{
-    font-size: 25px;
+.imagen__titulo img{
+    width: 500px;
+    height: 450px;
 }
 
-span{
-    border-radius: 3px;
-    background-color: beige;
-    padding: 35px 35px;
-    margin: 0 20px;
-    transition: box-shadow 0.3s ease;
+.titulo__intro{
+    display: flex;
+    flex-direction: column;
 }
 
-span:hover{
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+#tituloImportante{
+    font-size: var(--font-weight-small);
+    text-shadow: 2px 3px var(--dark-gray-color);
 }
 
-/*Seccion de Planes de inversion*/
+.titulo__intro p {
+    padding-bottom: 10px;
+}
 
-.section__box2{
-    position: relative;
-    font-size: var(--medium-font-size);
+#actionButton{
+    align-self: center;
+    background-color: #bf8508;
+    border: 1px solid var(--gray-color);
+    border-radius: 6px;
+    color: whitesmoke;
+    padding: 20px 30px;
     text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 1s ease;
 }
 
-.box--imagen{
-    width: 200px;
-    height: 150px;
+#actionButton:hover{
+    background-color: var(--yellow-color);
 }
 
-.box__plan1{
-    position: absolute;
-    left: 55px;
+/*Como funciona*/
+
+.comoFunciona__titulo{
+    text-align: center;
+    font-size: var(--font-weight-medium);
 }
 
-.box__plan2{
-    position: absolute;
-    left: 700px;
+.contenedor__FuncionImagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 50px;
 }
 
-.box__plan1, .box__plan2{
-    border-radius: 5px;
-    background-color: rgb(206, 205, 202);
-    padding: 0.25rem 0;
-    transition: box-shadow 0.3s ease;
+#TakingASelfie, #EditingSelfie, #ExpertsSelfie, #ReceivingEmail{
+    width: 190px;
+    height: 185px;
+}
+
+.contenedor--Selfie, .contenedor--Editor, .contenedor--Expertos, .contenedor--email{
+    align-self: center;
+    text-align: center;
+    color: var(--gray-text-color);
     cursor: pointer;
 }
 
-.box__plan1:hover{
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+/*Documentos Populares*/
+
+.ExtraDocuments{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.box__plan2:hover{
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+.documents__images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-/*Seccion numero 3 de la pagina*/
-
-.section__box3{
-    position: relative;
+.documents--cedula, .documents--USPassport, .documents--CAPassport{
+    align-self: center;
+   border: 1px solid var(--gray-text-color);
+   border-radius: 4px;
+   text-align: center;
+   transition: transform 0,2 ease;
 }
 
-.action__box{
-    position: absolute;
-    top: 410px;
-    left: 55px;
-    text-align: center;
+.documents--cedula:hover{
+    transform: scale(1.1);
 }
 
-.action__box h3{
-    font-size: var(--medium-font-size);
+.documents--USPassport:hover{
+    transform: scale(1.1);
+}
+.documents--CAPassport:hover{
+    transform: scale(1.1);
 }
 
-.action__box p{
-    font-size: 12px;
-}
 
-.box3--imagen{
-    position: absolute;
-    top: 360px;
-    left: 800px;
+.documents--cedula img{
     width: 400px;
-    height: 250px;
+    height: 276px;
 }
 
-.advertencia{
-    color: var(--grey--color)
+.documents--USPassport img{
+    width: 400px;
+    height: 276px;
+}
+
+.documents--CAPassport img{
+    width: 400px;
+    height: 276px;
+}
+
+.boton__Documentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/*Formulario de informacion*/
+
+.FormContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+form{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+fieldset{
+    align-self: center;
+    width:900px;
+    border: 1px solid var(--purple-color);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+#SendInfo{
+    background-color: #bf8508;
+    border: 1px solid var(--gray-color);
+    border-radius: 6px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: var(--font-weight-small);
+    cursor: pointer;
+    animation-name: enviar;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+}
+
+/*animacion enviar*/
+
+@keyframes enviar {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
 }
 
 /*Footer*/
 
 footer{
-    position: relative;
-    top: 620px;
-    background: rgb(54, 47, 250) ; 
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(0,212,255,1) 100%);
+    color: white;
     padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+span{
+    padding: 20px;
+}
+
+.visited:hover{
+    color:#a266b4;
+}
+
+.visited:visited{
     color: white;
 }
-
-.footer__box p{
-    font-size: var(--small-font-size);
-    text-align: center;
-}
-
-.footer--inicio{
-    color: white;
-    font-size: var(--medium-font-size);
-    transition: 0.3s ease;
-}
-.footer--inicio:hover{
-    color: lightblue;
-}
-
