@@ -1,0 +1,251 @@
+:root{
+    --font-family: 'Noto Sans', sans-serif;
+    --color-dark-blue: #276084;
+    --color-blue: #3a5fa2;
+    --color-ligthblue: #709bc5;
+    --color-white: white;
+    --gray-color: #7a7a7a;
+    --font-size-m: 35px;
+    --font-size-l: 42px;
+    --font-size-xl: 68px;
+    --font-size-xxl: 75px;
+    --mobile-font-size-m: 18px;
+    --mobile-font-font-size-l: 27px;
+    --mobile-font-font-size-xl: 42px;
+    --mobile-font-font-size-xxl: 58px;
+}
+
+/* GENERALES */
+
+html{
+   box-sizing: border-box;
+}
+
+*, ::before, ::after{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-family: var(--font-family);
+}
+
+.box{
+    width: 100%;
+    justify-content: center;
+    border: 2px solid var(--color-blue);
+    box-shadow: 12px 12px 7px var(--color-ligthblue);
+    padding: 20px;
+    border-radius: 5px 35px;
+    margin: 80px 0;
+}
+
+.container--center{
+    display: grid;
+    place-content: center;
+}
+
+.text--center{
+    text-align: center;
+}
+
+span{
+    font-weight: bolder;
+    line-height: 2;
+    color: var(--color-dark-blue);
+}
+
+.text--m{
+    font-size: var(--font-size-m);
+}
+
+.text--l{
+    font-size: var(--font-size-l);
+}
+
+.text--xl{
+    font-size: var(--font-size-xl);
+}
+
+.text--xxl{
+    font-size: var(--font-size-xxl);
+}
+
+img{
+    border-radius: 15px;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.visible{
+    display: grid !important;
+}
+
+/* HEADER */
+
+header{
+    grid-template-columns: 1fr;
+    position: relative;
+}
+
+.header__intro{
+    text-align: center;  
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    min-height: 8vh;
+    background-color: var(--color-dark-blue);
+    
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    font-size: var(--font-size);
+    color: var(--color-white);
+    padding: 0 30px;
+}
+
+.nav__menu{
+    display: grid;
+    grid-template-columns: repeat(3,120px);
+    padding: 0;
+    justify-content: end;
+    
+}
+
+.nav__menu li{
+    padding: 0px;
+    list-style-type: none;  
+}
+
+.nav__menu li a{
+    color: var(--color-white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.intro__btn{
+    width: 180px;
+    height: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px;
+    cursor: pointer;
+}
+
+.intro__btn__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.nav__icons{
+    width: 100%;
+    display: grid;
+    justify-items: end;
+    padding-right: 20px;
+}
+
+.nav__icon--open{
+    display: none;
+    width: 40px;
+}
+
+.nav__icon--close{
+    width: 24px;
+}
+
+
+/* SECTION */
+
+.container__section{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr;
+    column-gap: 65px;
+    justify-items: center;
+}
+
+article img{
+    width: 400px;
+    height: 400px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    padding: 40px 25px;
+}
+
+form{
+    width: 950px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0 35px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  padding: 15px 70px;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px var(--gray-color);
+}
+
+
+/* MOBILE IPHONE SE */
+
+@media only screen and (max-width: 768px){
+    .nav__icon--open{
+        display: inline-block;
+        width: 40px;
+    }
+
+    .nav__menu{
+        display: none;
+        grid-template-columns: 1fr;
+        background-color: var(--color-dark-blue);
+        row-gap: 25px;
+        padding: 15px 0;
+        position: absolute;
+        left: 10px;
+        top: 75px;
+    }
+}
+
+/* TABLET IPAD AIR */
+
+@media  only screen and (min-width: 768px) and (max-width: 1200px){
+    
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 768px) {
+    .nav__icon--close{
+        display: none;
+    }
+}

@@ -1,107 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personas emigrando</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="images/female.jpeg" type="image/png">
+    <title>ProyectoCompleto</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h1 class="titulo">Personas emigrando</h1>
-        <nav>
-            <a href="comparte/index.html" target="_blank">Comparte tu historia</a>
-            <a href="#" >Nosotros</a>
-        </nav>       
+    <header class="container--center">
+
+        <nav class="navbar">
+
+            <div class="nav__logo">
+                <p>MC- Desarrollos Web</p>
+            </div>
+                
+            <div>
+                <ul class="nav__menu">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__icons">
+                <img class="hidden nav__icon--close" src="assets/close.svg" alt="Close Logo" onclick="closeModal()">
+                <img class="nav__icon--open" src="assets/menu.svg" alt="Menu Logo" onclick="openModal()">
+            </div>
+
+        </nav>
+
+        <div class="header__intro container--center">
+            <div class="box">
+                <h1 class="text--xl">Te ayudamos a <br/>
+                    <span class="text--xxl">escalar</span> <br/>
+                    tu negocio!</h1>
+                <p class="text--l">Llega a más clientes desde aquí.</p>             
+                <button class="intro__btn" type="button">
+                    <img class="intro__btn__img" src="assets/let'sgo.jpg" alt="Logo menu">
+                </button>
+            </div>
+        </div>    
+       
     </header>
 
-    <article>
-        <div class="section__contenido">
+    <section>
+        <div class="box">
+            <article class="container__section container--center">
+                <div>
+                    <h1 class="text--l text--center">Tus clientes ya no están ahí.. <br/>
+                        ...donde antes!</h1>
+                    <p class="text--m text--center">No te vayas!</p>
+                    <p class="text--m text--center">Nadie tiene que irse, <br/>
+                        sólo encontrarse de otro modo.</p>    
+                </div>
+                <div>
+                    <img src="assets/negocioCerradojpg.jpg" alt="">
+                </div>
+            </article>
+        </div>  
+    </section>
 
-            <div class="columna1">
-                <h1 class="titulo">La migración y algunas maneras de hacerlo.</h1>
-                <h2 class="subtitulo">La migración es un fenómeno social consistente en el desplazamiento de personas que cambian de residencia de un lugar a otro.</h2>
-                <p>La migración entre países favorece el intercambio cultural y trae consigo un cambio radical en el estilo de vida del emigrante.
-                    Para evitar la migración sin control, los países establecen reglas para que se realice con planificación y se logren minimizar
-                    las consecuencias negativas para el país que los acoge.
-                </p>
+    <section>
+        <div class="box">
+            <article class="container__section container--center">
+                <div class="article__img--rigth">
+                    <img src="assets/ecommerce.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="text--l text--center">Ahora tus clientes están en todos lados!</h1>  
+                    <p class="text--m text--center">Y tú tienes que estar también.</p>
+                    <p class="text--m text--center">Para eso estaremos contigo.</p>    
+                </div>
+            </article>
+        </div>  
+    </section>
+
+    <section>
+        <div class="box">
+            <article class="container__section container--center">
+                <div>
+                    <h1 class="text--l text--center">Tus clientes y tu negocio en el mismo lugar: la web.</h1>  
+                    <p class="text--m text--center">Tus productos o servicios serán mostrados a tus potenciales clientes.</p>    
+                </div>
+                <div class="article__img--rigth">
+                    <img src="assets/ventas.jpeg" alt="">
+                </div>
+            </article>
+        </div>  
+    </section>
+
+    <footer class="container--center">
+        <form>
+            <label for="name">Nombre completo: </label> <br/>
+            <input type="text" name="name" placeholder="Dhoe Jhon"> <br/>
+
+            <label for="email">Email: </label> <br/>
+            <input type="text" name="email" placeholder="dhoeJhon@gmail.com"> <br/>
+
+            <label for="message">Message: </label> <br/>
+            <textarea name="message" id="" cols="30" rows="7" placeholder="Message"></textarea>
+
+            <div class="container--center">
+                <input type="submit" value="ENVIAR">
             </div>
 
-            <div class="columna1">
-                <div class="section__video">
-                    <video controls class="video">
-                        <source src="images/video_emigracion.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
+        </form>
+        
+    </footer>
 
-        </div>
-
-    </article>
-
-    <article>
-        <div class="section__contenido">
-            <div class="columna">
-                
-                <div class="section__imagen">
-                    <img src="images/voluntariado.jpeg" alt="" class="section__imagen">
-                </div>
-
-                <div class="section__informacion">
-                    <h1 class="titulo">Voluntariado</h1>
-                    <h2 class="subtitulo">Hay países que permiten la entrada de personas que ofrecen hacer un voluntariado.</h2>
-                    <p><a href="#">Experiencias de voluntarios</a></p>
-                    
-                </div>
-
-            </div>
-
-            <div class="columna">
-                
-                <div class="section__imagen">
-                    <img src="images/estudios.jpeg" alt="" class="section__imagen">
-                </div>
-
-                <div class="section__informacion">
-                    <h1 class="titulo">Estudios</h1>
-                    <h2 class="subtitulo">Estudiar es otra opción para emigrar que además contribuirá con tu empleabilidad.</h2>
-                    <p><a href="#">Experiencias de estudiantes</a></p>
-                </div>
-
-            </div>
-
-            <div class="columna">
-                
-                <div class="section__imagen">
-                    <img src="images/no_lucrativa.jpeg" alt="" class="section__imagen">
-                </div>
-
-                <div class="section__informacion">
-                    <h1 class="titulo">No lucrativa</h1>
-                    <h2 class="subtitulo">Emigrar con tus recursos para vivir un nuevo estilo de vida.</h2>
-                    <p><a href="#">Experiencias de emigrantes no lucrativos</a></p>
-                </div>
-            </div>
-
-            <div class="columna">
-                
-                <div class="section__imagen">
-                    <img src="images/cualificado.jpeg" alt="" class="section__imagen">
-                </div>
-
-                <div class="section__informacion">
-                    <h1 class="titulo">Altamente cualificado</h1>
-                    <h2 class="subtitulo">Si eres un profesional altamente cualificado, puedes optar por laborar en otro país.</h2>
-                    <p><a href="#">Experiencias de profesionales</a></p>
-                </div>
-            </div>
-
-        </div>
-
-
-    </article>
+    <script src="main.js"></script>
 
 </body>
 </html>
