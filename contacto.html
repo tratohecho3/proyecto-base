@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos Peludos</title>
+    <link rel="icon" type="image/png" href="media/logoAP.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="barra__contacto">
+            <figure class="contenedor__contactos">
+                <a href="#" class="boton"><img src="media/email.ico" alt="contactoCorreo" />amigospeludos@email.com</a>
+                <a href="#" class="boton"><img src="media/telephone.ico" alt="contactoTeléfono" />+52 000 0000000</a>
+                <a href="#" class="boton__whatsApp"><img src="media/whats.ico" alt="contactoWhatsApp" />WhatsApp mensajes</a>
+            </figure>
+        </div>
+    </header>
+    <nav class="contenedor__navegacion">
+        <img src="media/logoAP.png" alt="logoAmigosPeludos" class="logo"/>
+        <figure class="navegacion__menu">
+            <a href="index.html">INICIO</a>
+            <a href="conocelos.html">CONÓCELOS Y ADOPTA</a>
+            <a href="historias.html">HISTORIAS DE PERRITOS</a>
+            <a href="multimedia.html">MULTIMEDIA</a>
+            <a href="contacto.html">CONTACTO</a>
+        </figure>
+    </nav>
+
+    <main>
+        <section class="contenedor__principal">
+            <aside>
+                <div class="contenedor__productos">
+                    <figure>
+                        <a href="#"><img src="media/toys.webp" alt="juguetes"><figcaption>Juguetes</figcaption></a>
+                    </figure>
+                    <figure>
+                        <a href="#"><img src="media/food.webp" alt="alimento"><figcaption>Alimento</figcaption></a>
+                    </figure>
+                    <figure>
+                        <a href="#"><img src="media/water.gif" alt="accesorios"><figcaption>Accesorios</figcaption></a>
+                    </figure>
+                    <figure>
+                        <a href="#"><img src="media/medicine.webp" alt="tratamientos"><figcaption>Atención médica</figcaption></a>
+                    </figure>
+                </div>
+            </aside>
+            <article>
+                <div class="contenedor__articulo">
+                    <section>
+                        <h1><div id="contacto">CONTÁCTANOS</div></h1>
+                            <form action="" class="formulario">
+                                <fieldset>
+                                    <p>Por favor ingrese los datos que se solicitan a continuación (*Datos obligatorios):</p>
+                                    <br />
+                                    <p><label for="name">
+                                        <span>*¿Cómo te llamas?:</span>
+                                        <input type="text" id="name" name="nombre" size="30" placeholder="Escribe tu primer nombre." autocomplete="name" required>
+                                    </label></p>
+                                    <p><span>¿Desde qué país nos contactas?</span>
+                                        <select title="pais">
+                                            <option selected value="México">México</option>
+                                            <option value="Colombia">Colombia</option>
+                                            <option value="Estados Unidos">Estados Unidos</option>
+                                            <option value="Canadá">Canadá</option>
+                                        </select></p>
+                                    <p><label for="fechacontacto">
+                                        <span>¿Qué día te gustaría que te contactemos?</span>
+                                        <input type="date" id="fechacontacto" name="fechacontacto" min="2023-01-01" max="2023-03-31">
+                                    </label></p>
+                                    <p><label for="horario">
+                                        <span>¿A qué hora te gustaría que te contactemos?</span>
+                                        <input type="time" id="horario" name="horario" min="09:00" max="18:00">
+                                        <small>Nuestro horario de oficina es de 9am a 6pm.</small>
+                                    </label></p>
+                                    <p><label for="correo">
+                                        <span>*Déjanos un correo electrónico:</span>
+                                        <input type="email" id="correo" name="correo" size="43" placeholder="Escribe un correo electrónico para contactarte." autocomplete="email" required>
+                                    </label></p>
+                                    <p><label for="telefono">
+                                        <span>Escribe tu número de teléfono con su lada:</span>
+                                        <input size="32" type="tel" id="teléfono" name="teléfono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="13" placeholder="TELÉFONO con los 10 dígitos y su lada.">
+                                        <small>Formato: 000-123-456-7890</small>
+                                    </label></p>
+                                    <p><label for="comentarios">
+                                        <span>*Deja tus comentarios:</span>
+                                        <textarea name="textarea" rows="3" cols="52" required>Deja tus comentarios, dudas y/o sugerencias.</textarea>
+                                    </label></p>
+                                    <br/>
+                                    <section>
+                                        <p><button type="submit">Enviar</button></p>
+                                    </section>
+                                </fieldset>
+                            </form>
+                    </section>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="contenedor__footer">
+        <figure class="contenedor__redesSociales">
+            <a href="#" title="facebook" class="boton"><img src="media/facebook.png" alt="iconoFacebook"/></a>
+            <a href="#" title="instagram" class="boton"><img src="media/instagram.png" alt="iconoInstagram" /></a>
+            <a href="#" title="twitter" class="boton"><img src="media/twitter.png" alt="iconoTwitter" /></a>
+            <a href="#" title="youtube" class="boton"><img src="media/youtube.png" alt="iconoYoutube" /></a>
+        </figure>
+    </footer>
+</body>
+</html>
