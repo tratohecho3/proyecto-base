@@ -8,3 +8,11 @@ Jorge Prado Mercado
 4
 
 ## URL de Guthub Pages
+https://pradomercadojorge.github.io/proyecto-base/
+
+## Urls de ayuda:
+- http://listva.eu/#howitworks
+- https://color.adobe.com/es/create/color-wheel
+- https://cssgradient.io/
+- https://undraw.co/illustrations
+- https://www.webdesign-inspiration.com/
